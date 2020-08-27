@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Picatso_Day01_BiggerCanvas
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    basicText: I think you should paint it on a bigger canvas
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: ...a bigger canvas?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: His voice wavers with uncertainty, as if you aren't taking his concern
+      seriously.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    basicText: Lakes are big, so the painting should be big too right?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: The canvas is suddenly removed from the camera, and you see Picatso's
+      back as he moves to return the painting to the easel.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: When he returns to his chair, you see a deadpan look on his face.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    basicText: So... I hope you will focus on studying for the upcoming exam!
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: His eyes narrow as he regards you incredulously.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: Of course Teacher; I will find a bigger textbook to study with, since
+      I should put a bigger focus on studying.
+    choice: []
