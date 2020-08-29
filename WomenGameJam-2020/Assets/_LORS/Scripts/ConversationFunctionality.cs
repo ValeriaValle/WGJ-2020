@@ -7,39 +7,39 @@ public class ConversationFunctionality : MonoBehaviour
     #region VARIABLES
 
     [SerializeField]
-    private ConversationMaster master;
-    private TextElement flow;
+    private ConversationMaster master = null;
+    private TextElement flow = null;
 
     [Space]
     [SerializeField]
-    private GameObject interactablePanel;
+    private GameObject interactablePanel = null;
     [SerializeField]
-    private GameObject fadePanel;
+    private GameObject fadePanel = null;
 
     [Space]
     [Header("UI Boxes")]
     [SerializeField]
-    private GameObject dialogBox;
+    private GameObject dialogBox = null;
     [SerializeField]
-    private GameObject narrationBox, choiceBox;
+    private GameObject narrationBox = null, choiceBox = null;
     [SerializeField]
-    private GameObject[] optionBoxes;
+    private GameObject[] optionBoxes = null;
 
     [Space]
     [Header("UI TextFields")]
     [SerializeField]
-    private TextMeshProUGUI textDialog;
+    private TextMeshProUGUI textDialog = null;
     [SerializeField]
-    private TextMeshProUGUI textCharName, textNarration, textChoice;
+    private TextMeshProUGUI textCharName = null, textNarration = null, textChoice = null;
     [SerializeField]
-    private TextMeshProUGUI[] textOptions;
+    private TextMeshProUGUI[] textOptions = null;
 
     [Space]
     [Header("Global Variables")]
     [SerializeField]
-    private GenericInt talkedToCharacter;
+    private GenericInt talkedToCharacter = null;
     [SerializeField]
-    private GenericBool characterPass;
+    private GenericBool characterPass = null;
 
     private int flowIdx = 0;
     private int masterIdx = 0;

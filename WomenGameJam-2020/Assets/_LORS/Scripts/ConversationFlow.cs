@@ -3,7 +3,7 @@
 [CreateAssetMenu(fileName = "Flow", menuName = "Visual Novel/Conversation Flow", order = 1)]
 class ConversationFlow : ScriptableObject
 {
-    public TextElement[] dialogFlow;
+    public TextElement[] dialogFlow = null;
 }
 
 [System.Serializable]

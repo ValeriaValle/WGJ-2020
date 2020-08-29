@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Intro
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: "It\u2019s been 3 weeks since you have started teaching at Little
+      Orange\u2019s School for Outstanding Youths, and so much has happened."
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: On your first day a dangerous virus swept the galaxy, prompting many
+      services to start operating remotely.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: Of course, that included your class.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: "Transitioning to Zuum\u2014an online video chat platform\u2014in
+      the first week was a little difficult, but you managed to get the hang of it"
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: When you were first offered this temporary position, you were very
+      excited. The students themselves were all very unique, and you hoped to guide
+      them on the right path as their substitute teacher.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: "Speaking of the students, you\u2019ve noticed that the student grade
+      point average was on a steady decline. With the upcoming exam, it was concerning
+      whether or not they would do well."
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: Unsure of the cause, you decided to talk with your students after
+      class at the end of each day leading up to the exam.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: With so little time however, you could only pick one student per day.
+      Once you were sure of who was struggling, you would compile a list of students
+      to take extra lessons with you before the exam in hopes of better preparing
+      them for what was to come.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: "Of course you can\u2019t help everyone, but you would certainly try
+      to help as much as you could!"
+    choice: []

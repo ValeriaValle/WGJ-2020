@@ -4,10 +4,10 @@ using TMPro;
 public class InteractableObject : MonoBehaviour
 {
     [SerializeField]
-    private string objectDescription;
+    private string objectDescription = "";
 
     [SerializeField]
-    private TextMeshProUGUI descriptionText;
+    private TextMeshProUGUI descriptionText = null;
 
     public void ShowDescription()
     {

@@ -5,14 +5,14 @@ using UnityTools.ScriptableVariables;
 public class AudioManager : MonoBehaviour
 {
     [Header("Volume Values")]
-    public GenericFloat musicVolume;
-    public GenericFloat sfxVolume;
+    public GenericFloat musicVolume = null;
+    public GenericFloat sfxVolume = null;
 
     [Header("Volume Sliders")]
     [SerializeField]
-    private Slider musicSlider;
+    private Slider musicSlider = null;
     [SerializeField]
-    private Slider sfxSlider;
+    private Slider sfxSlider = null;
 
 
     private AudioSource aSourceMusic;
