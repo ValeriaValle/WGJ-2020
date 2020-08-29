@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2726129127160460761}
   - component: {fileID: 978061284403573142}
+  - component: {fileID: 1320329399}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -45,8 +46,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca204981afea3644288a54f2f1f1c216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxActive: {fileID: 11400000, guid: 6d0211195eb22dd479bba4890a9bd995, type: 2}
-  musicActive: {fileID: 11400000, guid: c3cab994069ea2b4aa1917f24d3e4bd9, type: 2}
+  musicVolume: {fileID: 11400000, guid: 8a7e511638ba450479b21b7ef2605e29, type: 2}
+  sfxVolume: {fileID: 11400000, guid: 844e45ff523c7fb438075e78eadbc31c, type: 2}
+  musicSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
+--- !u!114 &1320329399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922031580077474974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e790cd217109a467a9453f8d9441503e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listEvents:
+  - eventName: MusicVolumeChanged
+    Event: {fileID: 11400000, guid: 4ffa871f164b0b94b9092dc759ca2cea, type: 2}
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978061284403573142}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: AdjustMusicVolume
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventName: SFXVolumeChanged
+    Event: {fileID: 11400000, guid: 87298a2577a7da244b3df77bfa33f664, type: 2}
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 978061284403573142}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: AdjustSFXVolume
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventName: OnClick
+    Event: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2693019551152173337}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 82e736cadd34fc240872ea60323fb951, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5840478570567224533
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +156,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -219,11 +286,11 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 150
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

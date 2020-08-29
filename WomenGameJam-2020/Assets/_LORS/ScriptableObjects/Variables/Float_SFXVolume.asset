@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Bool_MusicOn
-  m_EditorClassIdentifier: Assembly-CSharp:HotPotatoTools.ScriptableVariables:GenericBool
-  var: 0
+  m_Script: {fileID: 11500000, guid: 56f308c2ecbee194bb054aea6685b4f1, type: 3}
+  m_Name: Float_SFXVolume
+  m_EditorClassIdentifier: 
+  var: 1

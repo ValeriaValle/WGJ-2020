@@ -1,10 +1,19 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityTools.ScriptableVariables;
 
 public class AudioManager : MonoBehaviour
 {
-    public GenericBool sfxActive;
-    public GenericBool musicActive;
+    [Header("Volume Values")]
+    public GenericFloat musicVolume;
+    public GenericFloat sfxVolume;
+
+    [Header("Volume Sliders")]
+    [SerializeField]
+    private Slider musicSlider;
+    [SerializeField]
+    private Slider sfxSlider;
+
 
     private AudioSource aSourceMusic;
     private AudioSource aSourceSFX;
@@ -12,21 +21,23 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         aSourceMusic = GameObject.FindWithTag("Audio/Music").GetComponent<AudioSource>();
-        aSourceMusic.enabled = musicActive.var;
+        aSourceMusic.volume = musicVolume.var;
+        musicSlider.value = musicVolume.var;
 
         aSourceSFX = GameObject.FindWithTag("Audio/SFX").GetComponent<AudioSource>();
-        aSourceSFX.enabled = sfxActive.var;
+        aSourceSFX.volume = sfxVolume.var;
+        sfxSlider.value = sfxVolume.var;
     }
 
-    public void MusicToggle()
+    public void AdjustMusicVolume()
     {
-        musicActive.var = !musicActive.var;
-        aSourceMusic.enabled = musicActive.var;
+        musicVolume.var = musicSlider.value;
+        aSourceMusic.volume = musicVolume.var;
     }
 
-    public void SFX_Toggle()
+    public void AdjustSFXVolume()
     {
-        sfxActive.var = !sfxActive.var;
-        aSourceSFX.enabled = sfxActive.var;
+        sfxVolume.var = sfxSlider.value;
+        aSourceSFX.volume = sfxVolume.var;
     }
 }
