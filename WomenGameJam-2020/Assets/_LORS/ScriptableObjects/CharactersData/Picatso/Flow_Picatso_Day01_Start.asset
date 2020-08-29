@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Picatso_Day01_Start
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: Picatso is a Gataneko from the planet Katonus, with a love for the
+      arts.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: You feel like he could be doing better in his academics, but instead
+      he is just barely passing the class.
+    choice: []
+  - isDialog: 0
+    isNarration: 0
+    isChoice: 1
+    characterName: 
+    basicText: What would you like to ask?
+    choice:
+    - choiceText: Ask about today's lesson.
+      choicePath: 1
+    - choiceText: Be straight forward and ask about his grades.
+      choicePath: 2

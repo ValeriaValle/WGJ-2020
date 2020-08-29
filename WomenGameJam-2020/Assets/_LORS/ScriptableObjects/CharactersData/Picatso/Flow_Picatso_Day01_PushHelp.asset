@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Picatso_Day01_PushHelp
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    basicText: Picatso, I am concerned that you have been quite distracted lately.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: Picatso looks to the side nervously.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: Oh... Are you sure Teacher?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    basicText: Your grades are passing, but I feel like there is room for improvement.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: Well, isn't it like that for all students?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    basicText: Yes, but I think if we figure out what's distracting you, then you
+      could focus more on the upcoming exam.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: The exam?!
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: His eyes widen as if you had just revealed that his favorite character
+      in Game of Cats was alive.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: How many more days until the exam?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    basicText: It's in a few days, Picatso. Will you be ready?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: The feline shifts in his seat awkwardly.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: Um... Can I be honest with you, Teacher?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: You nod, giving him your full attention as you lean in and stare intently
+      at the screen.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: I... I have artist's block!
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: A look of devastation crosses his face before he lets it fall into
+      his desk.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    basicText: P-Picatso? What is blocking you exactly?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: My latest piece; there is neither sense of life nor joys!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: '''Tis a vast shipwreck of my life''s esteems!'
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: His words are slightly muffled as he rambles on, gesturing with his
+      hands but not lifting his head even once.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    basicText: Can I see your painting?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: He freezes mid-gesture, looking up at you with teary eyes.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: Do you think... you could help me, Teacher?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: Before you can respond, the boy dashes over to his easel and picks
+      up his unfinished painting.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: Within seconds he has the canvas shoved in front of the camera, eagerly
+      awaiting your response. Only part of it was painted, with most of the art piece
+      still in sketch form.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: The beautiful composition was of a quiet lake in the moonlight, with
+      one lone boat floating in the middle.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    basicText: In the boat, there was figure that looked strangely like the popular
+      TV show character Pikatsu.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    basicText: Is that Pikatsu?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    basicText: No, no! It's a self expression of my mind; a vast living sea of waking
+      dreams! Yet, it feels like something is missing...
+    choice: []
+  - isDialog: 0
+    isNarration: 0
+    isChoice: 1
+    characterName: 
+    basicText: What will you do?
+    choice:
+    - choiceText: Reassure him that the painting is fine.
+      choicePath: 4
+    - choiceText: Suggest adding another person on the boat.
+      choicePath: 5
+    - choiceText: Recommend that he re-paints it on a bigger canvas.
+      choicePath: 6
