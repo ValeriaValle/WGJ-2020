@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/_LORS/Scenes/GeneralClass.unity
     guid: 2628ac377c2b2ce45b962eade7a7291b
   - enabled: 1
-    path: Assets/_LORS/Scenes/OneOnOne.unity
+    path: Assets/_LORS/Scenes/OneOnOne_Picatso.unity
     guid: f52132906f90ee44f93d45445b6681aa
   m_configObjects: {}
