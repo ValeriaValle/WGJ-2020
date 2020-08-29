@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using UnityTools.ScriptableVariables;
 
 public class AudioManager : MonoBehaviour
@@ -8,13 +7,6 @@ public class AudioManager : MonoBehaviour
     public GenericFloat musicVolume = null;
     public GenericFloat sfxVolume = null;
 
-    [Header("Volume Sliders")]
-    [SerializeField]
-    private Slider musicSlider = null;
-    [SerializeField]
-    private Slider sfxSlider = null;
-
-
     private AudioSource aSourceMusic;
     private AudioSource aSourceSFX;
 
@@ -22,22 +14,18 @@ public class AudioManager : MonoBehaviour
     {
         aSourceMusic = GameObject.FindWithTag("Audio/Music").GetComponent<AudioSource>();
         aSourceMusic.volume = musicVolume.var;
-        musicSlider.value = musicVolume.var;
 
         aSourceSFX = GameObject.FindWithTag("Audio/SFX").GetComponent<AudioSource>();
         aSourceSFX.volume = sfxVolume.var;
-        sfxSlider.value = sfxVolume.var;
     }
 
-    public void AdjustMusicVolume()
+    public void SetMusicVolume()
     {
-        musicVolume.var = musicSlider.value;
         aSourceMusic.volume = musicVolume.var;
     }
 
-    public void AdjustSFXVolume()
+    public void SetSFXVolume()
     {
-        sfxVolume.var = sfxSlider.value;
         aSourceSFX.volume = sfxVolume.var;
     }
 }

@@ -688,6 +688,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2295199470368725117}
+        m_TargetAssemblyTypeName: Settings, Assembly-CSharp
+        m_MethodName: AdjustSfxVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 87298a2577a7da244b3df77bfa33f664, type: 2}
         m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
         m_MethodName: Raise
@@ -998,6 +1010,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2295199470368725117}
+        m_TargetAssemblyTypeName: Settings, Assembly-CSharp
+        m_MethodName: AdjustMusicVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 4ffa871f164b0b94b9092dc759ca2cea, type: 2}
         m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
         m_MethodName: Raise
@@ -1386,6 +1410,7 @@ GameObject:
   - component: {fileID: 4002378592530047048}
   - component: {fileID: 4002378592530047050}
   - component: {fileID: 4002378592530047049}
+  - component: {fileID: 2295199470368725117}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -1451,6 +1476,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2295199470368725117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002378592530047415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252104f865eb40a4a9f607139f1434be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolume: {fileID: 11400000, guid: 8a7e511638ba450479b21b7ef2605e29, type: 2}
+  sfxVolume: {fileID: 11400000, guid: 844e45ff523c7fb438075e78eadbc31c, type: 2}
+  musicSlider: {fileID: 4002378592277528065}
+  sfxSlider: {fileID: 4002378591814675159}
 --- !u!1 &4002378592658046896
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,19 +7,25 @@ public class Intro : MonoBehaviour
     #region VARIABLES
 
     [SerializeField]
-    private ConversationFlow introFlow = null;
+    private ConversationMaster master = null;
+    private TextElement flow;
 
     [Header("UI Variables")]
     [SerializeField]
     private GameObject laptop = null;
     [SerializeField]
-    private TextMeshProUGUI narrationText = null;
-
+    private TextMeshProUGUI boxText = null;
     [SerializeField]
-    private int showLaptopIdx = 0;
+    private GameObject characterNameBox = null;
+    [SerializeField]
+    private TextMeshProUGUI textCharacterName = null;
+
+    private int masterIdx = 0;
     private int flowIdx = 0;
 
     public UnityEvent onIntroEnd;
+    public UnityEvent onKeyboardSound;
+    public UnityEvent onComputerDataSound_1;
 
     #endregion
 
@@ -27,7 +33,9 @@ public class Intro : MonoBehaviour
 
     void Start()
     {
-        narrationText.text = introFlow.dialogFlow[flowIdx].basicText;
+        onKeyboardSound.Invoke();
+        flow = master.flows[masterIdx].dialogFlow[flowIdx];
+        boxText.text = flow.basicText;
         flowIdx++;
     }
     #endregion
@@ -36,19 +44,36 @@ public class Intro : MonoBehaviour
 
     public void IntroFlow()
     {
-        if (flowIdx < introFlow.dialogFlow.Length)
+        if (flowIdx < master.flows[masterIdx].dialogFlow.Length)
         {
-            if (flowIdx == showLaptopIdx)
-            {
-                laptop.SetActive(true);
-            }
-            narrationText.text = introFlow.dialogFlow[flowIdx].basicText;
+            flow = master.flows[masterIdx].dialogFlow[flowIdx];
+
+            characterNameBox.SetActive(false);
+            boxText.text = flow.basicText;
             flowIdx++;
 
+            if (flow.isDialog)
+            {
+                characterNameBox.SetActive(true);
+                textCharacterName.text = flow.characterName;
+            }
         }
+
         else
         {
-            onIntroEnd.Invoke();
+            if (masterIdx == 0)
+            {
+                onComputerDataSound_1.Invoke();
+                laptop.SetActive(true); //TODO: Intro Animation
+
+                flowIdx = 0;
+                masterIdx++;
+                IntroFlow();
+            }
+            else
+            {
+                onIntroEnd.Invoke();
+            }
         }
     }
     #endregion
