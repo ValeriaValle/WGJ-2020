@@ -12,7 +12,7 @@ public class Ending_Narration : MonoBehaviour
 
     [Header("UI Variables")]
     [SerializeField]
-    private TextMeshProUGUI boxText;
+    private TextMeshProUGUI boxText = null;
     [SerializeField]
     private GameObject narrationBox = null, studentList = null;
     private GameObject fadePanel;
