@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Picatso_Day01_Reassure
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: I think it looks great.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    emotion: 2
+    music: 0
+    basicText: Yes, but it is missing something; I'm sure of it!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: Maybe you are thinking too hard on it? Try stepping away from it for
+      a while, and focus on studying for the upcoming exam.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: There's a silence on the other side of the screen before the canvas
+      is moved out of the way.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    emotion: 0
+    music: 0
+    basicText: Sorry Teacher; I guess I am too passionate about my art.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: He brings his canvas back to the easel, and returns to his chair.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Picatso
+    emotion: 0
+    music: 0
+    basicText: I will study properly for the exam, so you don't need to worry about
+      me.
+    choice: []

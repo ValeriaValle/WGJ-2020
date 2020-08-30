@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5950d3281fe30b4eaed89a5273e80c6, type: 3}
+  m_Name: Master_Tris
+  m_EditorClassIdentifier: 
+  flows:
+  - {fileID: 11400000, guid: 562012db4458edb49abceba1874a7496, type: 2}
+  - {fileID: 11400000, guid: 20689d7c6af36424ca519122f3d24029, type: 2}
+  - {fileID: 11400000, guid: 769b03241d819bd498f1bcc1c3112158, type: 2}
+  - {fileID: 11400000, guid: 6adffe9afbf5b224f8da30c5ca759133, type: 2}
+  - {fileID: 11400000, guid: fe9c78654c7255147b686b71daeac464, type: 2}
+  - {fileID: 11400000, guid: ffe2d2d2b927cdb41b5772be70388bca, type: 2}

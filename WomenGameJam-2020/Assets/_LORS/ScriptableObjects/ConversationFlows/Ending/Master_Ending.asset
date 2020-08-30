@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5950d3281fe30b4eaed89a5273e80c6, type: 3}
+  m_Name: Master_Ending
+  m_EditorClassIdentifier: 
+  flows:
+  - {fileID: 11400000, guid: 11a3b036a4bec2e45abd3e1eddbb0db1, type: 2}
+  - {fileID: 11400000, guid: 2dac128f06486bf44921dc0cb05f127c, type: 2}
+  - {fileID: 11400000, guid: 4bad119c11dd3bb47bd300e89c8755d4, type: 2}

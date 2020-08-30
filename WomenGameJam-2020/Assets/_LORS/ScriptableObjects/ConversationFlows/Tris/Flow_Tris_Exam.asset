@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Tris_Exam
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: How do you feel about the upcoming exam?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 0
+    music: 0
+    basicText: Um... I'm not sure. What do you think, Teacher?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: Well, I am very happy with your involvement in the class, and I think
+      you will do well.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 1
+    music: 0
+    basicText: Do you really think so?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 1
+    music: 0
+    basicText: Yes! You work very hard, and it is sure to be reflected in your exam
+      results.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 0
+    music: 0
+    basicText: Thank you, Teacher. But...
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: Yes?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 2
+    music: 0
+    basicText: Um... I am worried it will not be enough.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: Tris fidgets with her nails again, as if unsure of herself.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: What do you mean? Is there something you need me to explain?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 2
+    music: 0
+    basicText: It's not that; you are a great Teacher! But... But what if I forget
+      everything before the exam?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 2
+    music: 0
+    basicText: Or what if I read all the questions wrong?! I can't afford to fail...
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: Well, you have done alright in your past tests.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 2
+    music: 0
+    basicText: Yes, but I need to do better! Plus my brother-
+    choice: []
+  - isDialog: 0
+    isNarration: 0
+    isChoice: 1
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: She pauses abruptly before quieting.
+    choice:
+    - choiceText: Tell her not to push herself.
+      choicePath: 4
+    - choiceText: Tell her to calm down.
+      choicePath: 5

@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Tris_FeelingOkay
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: Are you alright, Tris? You seem to be a little uneasy.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 1
+    music: 0
+    basicText: Me? I don't think I am uneasy. I am ready to power through this exam!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 1
+    music: 0
+    basicText: Are you sure? It always helps to talk through problems with-
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 0
+    music: 0
+    basicText: Teacher, I'm totally fine! Just... please keep helping me study for
+      the exam, and I will do my best!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: ...Well, if you are sure. But I'm here if you need someone to talk
+      to.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 0
+    music: 0
+    basicText: Thanks Teacher. Would it be alright if I go now? I want to study some
+      more tonight before bed.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: Oh yes! Of course. Make sure you don't overwork yourself though. Sorry
+      for taking up your time Tris.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 0
+    music: 0
+    basicText: It's okay, Teacher; I won't. Thanks for worrying about me!
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: Tris abruptly leaves the call, and you can't help but wonder if that
+      could have gone any better.
+    choice: []

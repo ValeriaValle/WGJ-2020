@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Tris_Family
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: How is your family doing? I heard your older brother played in the
+      Rugby World Cup last year.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 0
+    music: 0
+    basicText: Oh yeah; they got knocked out in the quarter-finals though.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: That's too bad; I'm sure he played very well!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 1
+    music: 0
+    basicText: Yes... My father is very proud of him. He actually got signed to a
+      new team in Fyuchew.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: That's amazing!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 2
+    music: 0
+    basicText: Yeah. I miss him though...
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: There's an awkward pause as Tris fiddles with her nails.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 2
+    music: 0
+    basicText: So, uh, what did you want to talk about, Teacher?
+    choice: []

@@ -3,8 +3,9 @@ using UnityTools.ScriptableVariables;
 
 public class AudioManager : MonoBehaviour
 {
-    public GenericBool sfxActive;
-    public GenericBool musicActive;
+    [Header("Volume Values")]
+    public GenericFloat musicVolume = null;
+    public GenericFloat sfxVolume = null;
 
     private AudioSource aSourceMusic;
     private AudioSource aSourceSFX;
@@ -12,21 +13,19 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         aSourceMusic = GameObject.FindWithTag("Audio/Music").GetComponent<AudioSource>();
-        aSourceMusic.enabled = musicActive.var;
+        aSourceMusic.volume = musicVolume.var;
 
         aSourceSFX = GameObject.FindWithTag("Audio/SFX").GetComponent<AudioSource>();
-        aSourceSFX.enabled = sfxActive.var;
+        aSourceSFX.volume = sfxVolume.var;
     }
 
-    public void MusicToggle()
+    public void SetMusicVolume()
     {
-        musicActive.var = !musicActive.var;
-        aSourceMusic.enabled = musicActive.var;
+        aSourceMusic.volume = musicVolume.var;
     }
 
-    public void SFX_Toggle()
+    public void SetSFXVolume()
     {
-        sfxActive.var = !sfxActive.var;
-        aSourceSFX.enabled = sfxActive.var;
+        aSourceSFX.volume = sfxVolume.var;
     }
 }

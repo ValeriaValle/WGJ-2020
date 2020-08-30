@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityTools.ScriptableVariables;
 using TMPro;
 
@@ -7,55 +8,72 @@ public class ConversationFunctionality : MonoBehaviour
     #region VARIABLES
 
     [SerializeField]
-    private ConversationMaster master;
-    private TextElement flow;
+    private ConversationMaster master = null;
+    private TextElement flow = null;
 
     [Space]
     [SerializeField]
-    private GameObject interactablePanel;
+    private GameObject interactablePanel = null;
+
+    [Space]
+    [Header("Character")]
     [SerializeField]
-    private GameObject fadePanel;
+    private GameObject[] expressions = null;
 
     [Space]
     [Header("UI Boxes")]
     [SerializeField]
-    private GameObject dialogBox;
+    private GameObject dialogBox = null;
     [SerializeField]
-    private GameObject narrationBox, choiceBox;
+    private GameObject narrationBox = null, choiceBox = null;
     [SerializeField]
-    private GameObject[] optionBoxes;
+    private GameObject[] optionBoxes = null;
 
     [Space]
     [Header("UI TextFields")]
     [SerializeField]
-    private TextMeshProUGUI textDialog;
+    private TextMeshProUGUI textDialog = null;
     [SerializeField]
-    private TextMeshProUGUI textCharName, textNarration, textChoice;
+    private TextMeshProUGUI textCharName = null, textNarration = null, textChoice = null;
     [SerializeField]
-    private TextMeshProUGUI[] textOptions;
+    private TextMeshProUGUI[] textOptions = null;
 
     [Space]
     [Header("Global Variables")]
     [SerializeField]
-    private GenericInt talkedToCharacter;
+    private GenericBool talkedToCharacter = null;
     [SerializeField]
-    private GenericBool characterPass;
+    private GenericBool characterPass = null;
+    [SerializeField]
+    private GenericInt day = null;
 
     private int flowIdx = 0;
     private int masterIdx = 0;
     private bool closingDone = false;
 
+    public UnityEvent onEndConvo, EndDay, EndGame;
+
+    #endregion
+
+    #region UNITY_METHODS
+
+    void Start()
+    {
+        talkedToCharacter.var = true;
+        Conversation();
+    }
     #endregion
 
     #region MAIN_CONVERSATION 
 
     public void Conversation()
     {
-        DisableBoxes();
+        DisableObjects();
 
         if (flowIdx < master.flows[masterIdx].dialogFlow.Length)
         {
             flow = master.flows[masterIdx].dialogFlow[flowIdx];
+            expressions[flow.emotion].SetActive(true);
 
             if (flow.isNarration)
             {
@@ -86,13 +104,12 @@ public class ConversationFunctionality : MonoBehaviour
         }
         else
         {
-            EndConversation();
+            Debug.Log("EndConversation");
+            onEndConvo.Invoke();
         }
-
-
     }
 
-    private void DisableBoxes()
+    private void DisableObjects()
     {
         choiceBox.SetActive(false);
         narrationBox.SetActive(false);
@@ -101,6 +118,11 @@ public class ConversationFunctionality : MonoBehaviour
         foreach (GameObject box in optionBoxes)
         {
             box.SetActive(false);
+        }
+
+        foreach (GameObject expression in expressions)
+        {
+            expression.SetActive(false);
         }
     }
     #endregion
@@ -118,7 +140,21 @@ public class ConversationFunctionality : MonoBehaviour
         Conversation();
     }
 
-    private void EndConversation()
+    #region CHARACTERS_VARIATIONS
+
+    public void EndConversationSimple()
+    {
+        if (day.var != 2)
+        {
+            EndDay.Invoke();
+        }
+        else
+        {
+            EndGame.Invoke();
+        }
+    }
+
+    public void EndConversationPicatso()
     {
         flowIdx = 0;
         if (!closingDone)
@@ -136,7 +172,30 @@ public class ConversationFunctionality : MonoBehaviour
         }
         else
         {
-            fadePanel.SetActive(true);
+            EndConversationSimple();
         }
     }
+
+    public void EndConversationTris()
+    {
+        flowIdx = 0;
+        if (!closingDone)
+        {
+            if (masterIdx == 1)
+            {
+                masterIdx = 3;
+                Conversation();
+            }
+            else
+            {
+                EndConversationSimple();
+            }
+            closingDone = true;
+        }
+        else
+        {
+            EndConversationSimple();
+        }
+    }
+    #endregion
 }

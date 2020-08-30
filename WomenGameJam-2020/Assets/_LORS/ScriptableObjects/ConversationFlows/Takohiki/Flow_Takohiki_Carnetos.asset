@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Takohiki_Carnetos
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: Are those Carnetos?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: Yup.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: It looks like they haven't been touched; are you eating properly?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: Meh.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: ...Okay Takohiki, I think you need to stop playing the Nintondo Shift
+      for a moment; you have been playing every class!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: ...
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: You were able to tell? I thought the notebook would be able to fool
+      you.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: After all, you seemed kind of airheaded when you started teaching
+      our class.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: Well I am sorry to report that I'm actually very observant, and you
+      are not fooling me with the tough guy act.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: If you do not understand the lessons, why don't you just ask me for
+      help?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: '!!'
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: ...
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: ... I-it's not like I'm trying to do badly in class...
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: I'm just-... n-not very good at this stuff, o-okay?!
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: Takohiki looks like a Muntjack caught in the spacelights, eyes darting
+      around wildly.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: 'That''s alright; I appreciate the honesty.
+
+'
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: W-whatever. Can I go now?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: Well, I think we should try to figure out how we can help you prepare
+      for the upcoming exam.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: ...
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: I would really appreciate it if you'd cooperate with me when the time
+      comes.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: ...yeah. S-sure.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: Takohiki exits the call quickly, leaving you to your thoughts.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: You make a mental note to remember to schedule a 1 on 1 study session
+      with Takohiki before the exam.
+    choice: []

@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Tris_Start
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: Tris is a Saurian from the planet Dinorus, and comes from a family
+      of well known athletes.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: She actively participates in class, but you can tell she often struggles
+      with the content.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: So. I-
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 2
+    music: 0
+    basicText: Am I asking too many questions in class, Teacher? Because if that's
+      the case I can-
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: No, Tris. I-
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 1
+    music: 0
+    basicText: That's good.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 0
+    music: 0
+    basicText: I was worried that I was bothering you and- wait, did I cut you off?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 2
+    music: 0
+    basicText: I'm sorry!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: It's okay-
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Tris
+    emotion: 2
+    music: 0
+    basicText: My older brother was telling me- oh I did it again! I'm so sorry!
+    choice: []
+  - isDialog: 0
+    isNarration: 0
+    isChoice: 1
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: Tris looks at you apologetically. She seems to be anxious about something.
+    choice:
+    - choiceText: Ask about her family.
+      choicePath: 1
+    - choiceText: Ask if something is wrong.
+      choicePath: 2
+    - choiceText: Ask about the exam.
+      choicePath: 3
