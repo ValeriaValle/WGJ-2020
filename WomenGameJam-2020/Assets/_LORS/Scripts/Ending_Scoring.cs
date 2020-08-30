@@ -31,6 +31,10 @@ public class Ending_Scoring : MonoBehaviour
     #endregion
 
     #region UNITY_METHODS
+    void Start()
+    {
+        passStudents[2].var = true;
+    }
 
     #endregion
 

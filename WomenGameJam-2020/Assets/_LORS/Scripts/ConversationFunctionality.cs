@@ -172,14 +172,29 @@ public class ConversationFunctionality : MonoBehaviour
         }
         else
         {
-            if (day.var != 2)
+            EndConversationSimple();
+        }
+    }
+
+    public void EndConversationTris()
+    {
+        flowIdx = 0;
+        if (!closingDone)
+        {
+            if (masterIdx == 1)
             {
-                EndDay.Invoke();
+                masterIdx = 3;
+                Conversation();
             }
             else
             {
-                EndGame.Invoke();
+                EndConversationSimple();
             }
+            closingDone = true;
+        }
+        else
+        {
+            EndConversationSimple();
         }
     }
     #endregion
