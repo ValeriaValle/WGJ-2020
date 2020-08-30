@@ -17,12 +17,16 @@ MonoBehaviour:
     isNarration: 0
     isChoice: 0
     characterName: You
+    emotion: 0
+    music: 0
     basicText: "So Picatso, do you have any questions about today\u2019s class?"
     choice: []
   - isDialog: 0
     isNarration: 1
     isChoice: 0
     characterName: 
+    emotion: 1
+    music: 0
     basicText: The boy blinks a few times before realizing that you are talking to
       him.
     choice: []
@@ -30,24 +34,32 @@ MonoBehaviour:
     isNarration: 0
     isChoice: 0
     characterName: Picatso
+    emotion: 1
+    music: 0
     basicText: Huh? Oh! Um, no teacher. Everything is alright.
     choice: []
   - isDialog: 0
     isNarration: 1
     isChoice: 0
     characterName: 
+    emotion: 1
+    music: 0
     basicText: He gives you a strained smile.
     choice: []
   - isDialog: 1
     isNarration: 0
     isChoice: 0
     characterName: You
+    emotion: 1
+    music: 0
     basicText: Okay...
     choice: []
   - isDialog: 0
     isNarration: 0
     isChoice: 1
     characterName: 
+    emotion: 1
+    music: 0
     basicText: Picatso is acting weirdly, but you wonder if it would be okay to push
       him to reveal his true feelings.
     choice:

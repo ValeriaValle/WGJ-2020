@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Takohiki_Start
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: Takohiki is a Mataurian from the planet Catalu, and is one of the
+      quieter students in your class.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: They appear to be very focused during lessons, but somehow this work
+      ethic does not translate well into their grades.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: Hello Takohiki! How did you find today's lesson?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: There is a pause before you see one of their tentacles move, and the
+      mic unmutes
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: Good.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: The mic immediately mutes again.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: Um... were you able to take a lot of useful notes?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: The same thing happens again as the mic unmutes for a moment.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: Yup.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: ...That's good. Do you have questions or concerns that you might want
+      to talk about?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: Nope.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: Are you sure? There was a lot of content to take in today, and I'd
+      understand if anything was a little confusing...
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: Yup.
+    choice: []
+  - isDialog: 0
+    isNarration: 0
+    isChoice: 1
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: Clearly this conversation is going nowhere. You knew Takohiki was
+      not the talkative type, but this was a bit much.
+    choice:
+    - choiceText: Immediately jump into discussing their grades.
+      choicePath: 1
+    - choiceText: Ask about their games.
+      choicePath: 2
+    - choiceText: Point out their bowl of untouched Carnetos
+      choicePath: 3

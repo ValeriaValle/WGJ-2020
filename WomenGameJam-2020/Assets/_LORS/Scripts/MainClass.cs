@@ -31,13 +31,13 @@ public class MainClass : MonoBehaviour
         {
             narrationText.text = "Who would you like to talk to?";
             day.var++;
-            StartCoroutine(HideDescriptionBox(4f));
+            StartCoroutine(HideDescriptionBox(2.5f));
         }
         else
         {
-            narrationText.text = "Day 2.Who would you like to talk to?";
+            narrationText.text = "Day 2. Who would you like to talk to?";
             day.var++;
-            StartCoroutine(HideDescriptionBox(4f));
+            StartCoroutine(HideDescriptionBox(2.5f));
         }
     }
 
@@ -50,7 +50,7 @@ public class MainClass : MonoBehaviour
         if (haveTalked[option].var)
         {
             narrationBox.SetActive(true);
-            narrationText.text = "You've already had a 1-on-1 video chat with this student";
+            narrationText.text = "You've already had a 1-on-1 video chat with this student.";
             StartCoroutine(HideDescriptionBox(4f));
         }
         else

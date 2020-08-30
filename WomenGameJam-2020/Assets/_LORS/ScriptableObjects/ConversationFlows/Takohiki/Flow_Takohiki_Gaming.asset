@@ -1,0 +1,359 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Takohiki_Gaming
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: Is that a Winterball plushie from 'Overclock' on your back shelf?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: Takohiki's glasses fall a little as their head whips around to face
+      the camera directly.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: Teacher.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 1
+    music: 0
+    basicText: You know Overclock?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 1
+    music: 0
+    basicText: You can hear the shock in their voice. For the first time in the three
+      weeks you have been teaching them, you feel like their full attention is on
+      you.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 1
+    music: 0
+    basicText: ...Know Overclock? I main Charity!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 1
+    music: 0
+    basicText: Oh. My. AZATOS.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 1
+    music: 0
+    basicText: WE HAVE TO PLAY TOGETHER!
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 1
+    music: 0
+    basicText: Takohiki immediately begins to chatter rapidly about the game, excited
+      to share something in common with you.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 1
+    music: 0
+    basicText: -I mean, Charity totally got nerfed though when they took away her
+      group revive ability, but she's still a really good support for my main, Goji
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 1
+    music: 0
+    basicText: Goji? Somehow I thought you might be a Deena player.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 1
+    music: 0
+    basicText: Deena? N'aw, I think she's totally overrated.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 1
+    music: 0
+    basicText: Hey now, Deena is a totally awesome character. She's my second waifu
+      after Charity.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 1
+    music: 0
+    basicText: W-waifu?! Teacher, why did you not tell me you were such an interesting
+      person!!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 1
+    music: 0
+    basicText: Well, maybe because you never asked.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: W-well I-! Uh...
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: Takohiki scratches the back of their head in embarrassment.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: I guess I sort of just thought that people like you wouldn't appreciate
+      things like this...
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: Why would you think that?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: My parents always told me that games are bad for you, and I should
+      learn something more useful... But-!!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: Overclock is something I am good at; That's why I like to play it
+      all the time!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: Including during class?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: Well of course I-
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: ... Teacher, you knew?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: I can see the reflection of the Overclock H.U.D in your glasses.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: Oh... that's... ehehehe...
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: It's okay Takohiki; I'm not mad.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 1
+    music: 0
+    basicText: Really?!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 1
+    music: 0
+    basicText: But we DO have a big exam coming up, and I want to make sure you pass
+      because it can prove to your parents that games are not all that bad for you.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 1
+    music: 0
+    basicText: I mean, look at me; I'm a teacher!
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 1
+    music: 0
+    basicText: Takohiki smiles, then breaks out into laughter.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 1
+    music: 0
+    basicText: That is very true, Teacher. Maybe I can be like you some day!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 1
+    music: 0
+    basicText: Maybe, if the day comes when you don't need healing anymore.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 1
+    music: 0
+    basicText: Takohiki covers their face as they laugh even harder.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 1
+    music: 0
+    basicText: Teacher, you are so much cooler than I thought!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 1
+    music: 0
+    basicText: Haha, thank you. But in all seriousness Takohiki, will you be okay
+      for the upcoming exam?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: Um, not really... I don't really understand the topics very well,
+      and I am afraid to speak up in class.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: Then, if you are willing, I'm making time to have 1 on 1 study sessions
+      before the exam.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 1
+    music: 0
+    basicText: Please sign me up Teacher!! And maybe if I do well, we can play a
+      game together!
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: Of course! But for today, maybe we can go over the lesson a bit before
+      we call it a night.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 1
+    basicText: Sure!
+    choice: []

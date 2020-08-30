@@ -1219,6 +1219,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325440290}
   m_CullTransparentMesh: 0
+--- !u!1 &1686599325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1686599327}
+  - component: {fileID: 1686599326}
+  m_Layer: 0
+  m_Name: Variables Initializer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1686599326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686599325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6718556ac8ce14f94932a61c0a9036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  day: {fileID: 11400000, guid: 46443e04352d9594ea687af080475442, type: 2}
+  passStudents:
+  - {fileID: 11400000, guid: 969899a80adc58b4eaa9935f20240357, type: 2}
+  - {fileID: 11400000, guid: d521ebdf3c6dc044fab7c96f8e2db6a8, type: 2}
+  - {fileID: 11400000, guid: bbab17707f09ab54cba26c7b907cd269, type: 2}
+  talkedStudents:
+  - {fileID: 11400000, guid: c5cb6085020445648b0498478ed7f37d, type: 2}
+  - {fileID: 11400000, guid: aafcff213d93433498546752ea91c998, type: 2}
+  - {fileID: 11400000, guid: 2bfc9b289075cbb489ee689c59063a3d, type: 2}
+--- !u!4 &1686599327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686599325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1689260769
 GameObject:
   m_ObjectHideFlags: 0

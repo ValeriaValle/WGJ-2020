@@ -14,18 +14,17 @@ public class Intro : MonoBehaviour
     [SerializeField]
     private GameObject laptop = null;
     [SerializeField]
-    private TextMeshProUGUI boxText = null;
+    private TextMeshProUGUI narrationText = null, dialogText = null;
     [SerializeField]
-    private GameObject characterNameBox = null;
+    private GameObject narrationBox = null, dialogBox = null;
     [SerializeField]
     private TextMeshProUGUI textCharacterName = null;
 
     private int masterIdx = 0;
     private int flowIdx = 0;
 
-    public UnityEvent onIntroEnd;
+    public UnityEvent onEndFirstPart, onIntroEnd;
     public UnityEvent onKeyboardSound;
-    public UnityEvent onComputerDataSound_1;
 
     #endregion
 
@@ -35,7 +34,7 @@ public class Intro : MonoBehaviour
     {
         onKeyboardSound.Invoke();
         flow = master.flows[masterIdx].dialogFlow[flowIdx];
-        boxText.text = flow.basicText;
+        narrationText.text = flow.basicText;
         flowIdx++;
     }
     #endregion
@@ -48,14 +47,21 @@ public class Intro : MonoBehaviour
         {
             flow = master.flows[masterIdx].dialogFlow[flowIdx];
 
-            characterNameBox.SetActive(false);
-            boxText.text = flow.basicText;
-            flowIdx++;
-
-            if (flow.isDialog)
+            if (flow.isNarration)
             {
-                characterNameBox.SetActive(true);
+                narrationBox.SetActive(true);
+                dialogBox.SetActive(false);
+                narrationText.text = flow.basicText;
+                flowIdx++;
+            }
+
+            else if (flow.isDialog)
+            {
+                narrationBox.SetActive(false);
+                dialogBox.SetActive(true);
+                dialogText.text = flow.basicText;
                 textCharacterName.text = flow.characterName;
+                flowIdx++;
             }
         }
 
@@ -63,18 +69,21 @@ public class Intro : MonoBehaviour
         {
             if (masterIdx == 0)
             {
-                onComputerDataSound_1.Invoke();
-                laptop.SetActive(true); //TODO: Intro Animation
-
-                flowIdx = 0;
-                masterIdx++;
-                IntroFlow();
+                onEndFirstPart.Invoke();
             }
             else
             {
                 onIntroEnd.Invoke();
             }
         }
+    }
+
+    public void FadeLaptop()
+    {
+        laptop.SetActive(true);
+        flowIdx = 0;
+        masterIdx++;
+        IntroFlow();
     }
     #endregion
 }

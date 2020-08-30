@@ -350,6 +350,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &41992923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,6 +676,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: SimpleSceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1404,6 +1428,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &702784794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1527,6 +1563,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: SimpleSceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2308,6 +2356,18 @@ MonoBehaviour:
         - m_Target: {fileID: 573209094}
           m_TargetAssemblyTypeName: Ending_Narration, Assembly-CSharp
           m_MethodName: EndingFlow
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+          m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3314,6 +3374,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1367028558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3766,6 +3838,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2072607760}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: c04c97504c97c444880b5d4857ce5d0d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1778876285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4163,3 +4247,8 @@ RectTransform:
   m_AnchoredPosition: {x: -13.913, y: 28.2}
   m_SizeDelta: {x: 687.6261, y: 52.999985}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &2072607760 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2693019551152173337, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
+  m_PrefabInstance: {fileID: 822390297}
+  m_PrefabAsset: {fileID: 0}

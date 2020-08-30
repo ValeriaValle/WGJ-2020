@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityTools.ScriptableVariables;
 using TMPro;
 
@@ -13,8 +14,11 @@ public class ConversationFunctionality : MonoBehaviour
     [Space]
     [SerializeField]
     private GameObject interactablePanel = null;
+
+    [Space]
+    [Header("Character")]
     [SerializeField]
-    private GameObject fadePanel = null;
+    private GameObject[] expressions = null;
 
     [Space]
     [Header("UI Boxes")]
@@ -37,25 +41,39 @@ public class ConversationFunctionality : MonoBehaviour
     [Space]
     [Header("Global Variables")]
     [SerializeField]
-    private GenericInt talkedToCharacter = null;
+    private GenericBool talkedToCharacter = null;
     [SerializeField]
     private GenericBool characterPass = null;
+    [SerializeField]
+    private GenericInt day = null;
 
     private int flowIdx = 0;
     private int masterIdx = 0;
     private bool closingDone = false;
 
+    public UnityEvent onEndConvo, EndDay, EndGame;
+
+    #endregion
+
+    #region UNITY_METHODS
+
+    void Start()
+    {
+        talkedToCharacter.var = true;
+        Conversation();
+    }
     #endregion
 
     #region MAIN_CONVERSATION 
 
     public void Conversation()
     {
-        DisableBoxes();
+        DisableObjects();
 
         if (flowIdx < master.flows[masterIdx].dialogFlow.Length)
         {
             flow = master.flows[masterIdx].dialogFlow[flowIdx];
+            expressions[flow.emotion].SetActive(true);
 
             if (flow.isNarration)
             {
@@ -86,13 +104,12 @@ public class ConversationFunctionality : MonoBehaviour
         }
         else
         {
-            EndConversation();
+            Debug.Log("EndConversation");
+            onEndConvo.Invoke();
         }
-
-
     }
 
-    private void DisableBoxes()
+    private void DisableObjects()
     {
         choiceBox.SetActive(false);
         narrationBox.SetActive(false);
@@ -101,6 +118,11 @@ public class ConversationFunctionality : MonoBehaviour
         foreach (GameObject box in optionBoxes)
         {
             box.SetActive(false);
+        }
+
+        foreach (GameObject expression in expressions)
+        {
+            expression.SetActive(false);
         }
     }
     #endregion
@@ -118,7 +140,21 @@ public class ConversationFunctionality : MonoBehaviour
         Conversation();
     }
 
-    private void EndConversation()
+    #region CHARACTERS_VARIATIONS
+
+    public void EndConversationSimple()
+    {
+        if (day.var != 2)
+        {
+            EndDay.Invoke();
+        }
+        else
+        {
+            EndGame.Invoke();
+        }
+    }
+
+    public void EndConversationPicatso()
     {
         flowIdx = 0;
         if (!closingDone)
@@ -136,7 +172,15 @@ public class ConversationFunctionality : MonoBehaviour
         }
         else
         {
-            fadePanel.SetActive(true);
+            if (day.var != 2)
+            {
+                EndDay.Invoke();
+            }
+            else
+            {
+                EndGame.Invoke();
+            }
         }
     }
+    #endregion
 }

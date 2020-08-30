@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3171d131392dcbb4583a80800d368b6f, type: 3}
+  m_Name: Flow_Takohiki_PushHelp
+  m_EditorClassIdentifier: 
+  dialogFlow:
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: So I've noticed that you seem to be struggling with keeping your grades
+      up.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: Since you write a lot of notes, I think this is very odd. So I was
+      wondering, would it be okay if I take a look at them?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: ...No.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: ...No?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: Takohiki doesn't respond, causing you to feel a little frustrated.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 0
+    music: 0
+    basicText: Takohiki, I'd like to help you improve your grades. But if you don't
+      cooperate with me, then we can't do anything about it
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: As if tired of your nagging, Takohiki appears to sigh before shoving
+      their notebook in front of the camera.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: A bunch of characters are written in sequence, but you aren't exactly
+      sure what they represent
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: Can you read Mataurian, Teacher?
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: ...
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: I didn't think so.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: The notebook is taken away from the screen, and you feel a little
+      ashamed for not realizing that could have been an issue.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: Well... I still want to help you improve your grades somehow...
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: There isn't anything you can do but teach, so I'd appreciate it if
+      you didn't try to over step your boundaries, Teacher.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: Their words stab you like a knife; it felt like they thought you were
+      at fault for not teaching well.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 2
+    music: 0
+    basicText: Now do you understand?
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 2
+    music: 0
+    basicText: You take a deep breath to calm yourself, but it is hard to relax when
+      you feel so attacked.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: You
+    emotion: 2
+    music: 0
+    basicText: I... think that maybe we can talk another day.
+    choice: []
+  - isDialog: 1
+    isNarration: 0
+    isChoice: 0
+    characterName: Takohiki
+    emotion: 0
+    music: 0
+    basicText: '''Kay'
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: You abruptly end the call, and put your head between your hands.
+    choice: []
+  - isDialog: 0
+    isNarration: 1
+    isChoice: 0
+    characterName: 
+    emotion: 0
+    music: 0
+    basicText: That did not go very well at all. You would definitely have to consider
+      changing your approach if you want them to pass.
+    choice: []

@@ -14,6 +14,8 @@ public class TextElement
     public bool isChoice;
 
     public string characterName;
+    public int emotion;
+    public int music;
     [TextArea(5, 10)]
     public string basicText;
     public ChoiceOptions[] choice;
