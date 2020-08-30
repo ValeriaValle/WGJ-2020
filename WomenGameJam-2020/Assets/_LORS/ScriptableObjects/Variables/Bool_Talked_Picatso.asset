@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1c5e68d578475d4f8e117872b49f35b, type: 3}
-  m_Name: Bool_CharacterPass
+  m_Name: Bool_Talked_Picatso
   m_EditorClassIdentifier: 
   var: 0

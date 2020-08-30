@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_LORS/Scenes/OneOnOne_Picatso.unity
     guid: f52132906f90ee44f93d45445b6681aa
+  - enabled: 1
+    path: Assets/_LORS/Scenes/OneOnOne_Tris.unity
+    guid: 551eee3912ef9e6448c4a93d5976d2cf
+  - enabled: 1
+    path: Assets/_LORS/Scenes/OneOnOne_Takohiki.unity
+    guid: 749dcce85d0ee954fbadcd3b2dd03c95
   m_configObjects: {}
