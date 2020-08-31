@@ -17,30 +17,40 @@ MonoBehaviour:
     isNarration: 0
     isChoice: 0
     characterName: You
+    emotion: 0
+    music: 3
     basicText: I think that's all for today.
     choice: []
   - isDialog: 0
     isNarration: 1
     isChoice: 0
     characterName: 
+    emotion: 0
+    music: 3
     basicText: Picatso nods absentmindedly.
     choice: []
   - isDialog: 1
     isNarration: 0
     isChoice: 0
     characterName: You
+    emotion: 0
+    music: 3
     basicText: Have a good night, Picatso.
     choice: []
   - isDialog: 0
     isNarration: 1
     isChoice: 0
     characterName: 
+    emotion: 0
+    music: 3
     basicText: He nods again.
     choice: []
   - isDialog: 0
     isNarration: 1
     isChoice: 0
     characterName: 
+    emotion: 0
+    music: 3
     basicText: You probably would not be able to get anything else out of him at
       this point, so you end the call.
     choice: []

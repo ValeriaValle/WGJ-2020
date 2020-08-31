@@ -26,7 +26,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 3
     basicText: The feline nods, before his smile falls and the blank expression resurfaces
       on his countenance.
     choice: []

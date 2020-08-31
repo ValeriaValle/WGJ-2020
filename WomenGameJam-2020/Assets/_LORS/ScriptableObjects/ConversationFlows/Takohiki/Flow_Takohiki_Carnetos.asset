@@ -50,7 +50,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 0
-    music: 0
+    music: 3
     basicText: ...Okay Takohiki, I think you need to stop playing the Nintondo Shift
       for a moment; you have been playing every class!
     choice: []
@@ -59,7 +59,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 0
-    music: 0
+    music: 3
     basicText: ...
     choice: []
   - isDialog: 1
@@ -67,7 +67,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 2
-    music: 0
+    music: 3
     basicText: You were able to tell? I thought the notebook would be able to fool
       you.
     choice: []
@@ -76,7 +76,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 2
-    music: 0
+    music: 3
     basicText: After all, you seemed kind of airheaded when you started teaching
       our class.
     choice: []
@@ -85,7 +85,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 3
     basicText: Well I am sorry to report that I'm actually very observant, and you
       are not fooling me with the tough guy act.
     choice: []
@@ -94,7 +94,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 3
     basicText: If you do not understand the lessons, why don't you just ask me for
       help?
     choice: []
@@ -103,7 +103,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 0
-    music: 0
+    music: 3
     basicText: '!!'
     choice: []
   - isDialog: 1
@@ -111,7 +111,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 0
-    music: 0
+    music: 3
     basicText: ...
     choice: []
   - isDialog: 1
@@ -119,7 +119,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 2
-    music: 0
+    music: 2
     basicText: ... I-it's not like I'm trying to do badly in class...
     choice: []
   - isDialog: 1
@@ -127,7 +127,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 2
-    music: 0
+    music: 2
     basicText: I'm just-... n-not very good at this stuff, o-okay?!
     choice: []
   - isDialog: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 2
     basicText: Takohiki looks like a Muntjack caught in the spacelights, eyes darting
       around wildly.
     choice: []
@@ -144,7 +144,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 2
     basicText: 'That''s alright; I appreciate the honesty.
 
 '
@@ -154,7 +154,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 2
-    music: 0
+    music: 2
     basicText: W-whatever. Can I go now?
     choice: []
   - isDialog: 1
@@ -162,7 +162,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 2
     basicText: Well, I think we should try to figure out how we can help you prepare
       for the upcoming exam.
     choice: []
@@ -171,7 +171,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 2
-    music: 0
+    music: 2
     basicText: ...
     choice: []
   - isDialog: 1
@@ -179,7 +179,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 2
     basicText: I would really appreciate it if you'd cooperate with me when the time
       comes.
     choice: []
@@ -188,7 +188,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 2
-    music: 0
+    music: 2
     basicText: ...yeah. S-sure.
     choice: []
   - isDialog: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 2
     basicText: Takohiki exits the call quickly, leaving you to your thoughts.
     choice: []
   - isDialog: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 2
     basicText: You make a mental note to remember to schedule a 1 on 1 study session
       with Takohiki before the exam.
     choice: []

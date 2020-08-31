@@ -18,7 +18,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 3
     basicText: I think you should calm down; there is nothing to worry about.
     choice: []
   - isDialog: 1
@@ -26,7 +26,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 3
     basicText: But I-But what if I fail? My parents will never-they won't...
     choice: []
   - isDialog: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 3
     basicText: I don't think you will fail. But either way, I think they will be
       proud you tried your best.
     choice: []
@@ -43,7 +43,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 3
     basicText: ...
     choice: []
   - isDialog: 1
@@ -51,7 +51,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 0
-    music: 0
+    music: 3
     basicText: ...Okay Teacher; I understand.
     choice: []
   - isDialog: 1
@@ -59,7 +59,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 0
-    music: 0
+    music: 3
     basicText: That's good! You should have more confidence in yourself.
     choice: []
   - isDialog: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 3
     basicText: She nods, looking down with a sigh.
     choice: []
   - isDialog: 1
@@ -75,7 +75,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 0
-    music: 0
+    music: 3
     basicText: So... does this mean we are done for the day?
     choice: []
   - isDialog: 1
@@ -83,7 +83,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 0
-    music: 0
+    music: 3
     basicText: If you don't have any other concerns, I guess it's okay to let you
       go now.
     choice: []
@@ -92,7 +92,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 3
     basicText: She shrugs her shoulders, and you take it as a sign to end the call.
     choice: []
   - isDialog: 1
@@ -100,6 +100,6 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 0
-    music: 0
+    music: 3
     basicText: I'll see you tomorrow!
     choice: []

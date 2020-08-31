@@ -2182,6 +2182,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114519240}
   m_CullTransparentMesh: 0
+--- !u!1001 &1125652313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3517588762774137937, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517588762774137937, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517588762774137937, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517588762774137937, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517588762774137937, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517588762774137937, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517588762774137937, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517588762774137937, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517588762774137937, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517588762774137937, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517588762774137937, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517588762774137948, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+      propertyPath: m_Name
+      value: MusicTracksManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+--- !u!114 &1125652314 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3517588762774137938, guid: 3327ebd368d781f49b59e0718f3e09d7, type: 3}
+  m_PrefabInstance: {fileID: 1125652313}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53dcf7c9c2844848942ad2e02fd7f8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1210705130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,12 +2536,28 @@ MonoBehaviour:
   talkedToCharacter: {fileID: 11400000, guid: 2bfc9b289075cbb489ee689c59063a3d, type: 2}
   characterPass: {fileID: 11400000, guid: bbab17707f09ab54cba26c7b907cd269, type: 2}
   day: {fileID: 11400000, guid: 46443e04352d9594ea687af080475442, type: 2}
+  musicIdx: {fileID: 11400000, guid: 4c780dd5d2d2cac4092ba0f2995605c7, type: 2}
   onEndConvo:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1450628330}
         m_TargetAssemblyTypeName: ConversationFunctionality, Assembly-CSharp
         m_MethodName: EndConversationTris
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  changeMusic:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1125652314}
+        m_TargetAssemblyTypeName: MusicManager, Assembly-CSharp
+        m_MethodName: ChangeClip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

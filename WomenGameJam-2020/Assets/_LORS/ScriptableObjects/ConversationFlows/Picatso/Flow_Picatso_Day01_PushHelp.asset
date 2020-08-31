@@ -18,7 +18,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 0
-    music: 0
+    music: 3
     basicText: Picatso, I am concerned that you have been quite distracted lately.
     choice: []
   - isDialog: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 3
     basicText: Picatso looks to the side nervously.
     choice: []
   - isDialog: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 1
-    music: 0
+    music: 3
     basicText: Oh... Are you sure Teacher?
     choice: []
   - isDialog: 1
@@ -42,7 +42,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 1
-    music: 0
+    music: 3
     basicText: Your grades are passing, but I feel like there is room for improvement.
     choice: []
   - isDialog: 1
@@ -50,7 +50,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 1
-    music: 0
+    music: 3
     basicText: Well, isn't it like that for all students?
     choice: []
   - isDialog: 1
@@ -58,7 +58,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 1
-    music: 0
+    music: 3
     basicText: Yes, but I think if we figure out what's distracting you, then you
       could focus more on the upcoming exam.
     choice: []
@@ -67,7 +67,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 0
-    music: 0
+    music: 3
     basicText: The exam?!
     choice: []
   - isDialog: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 3
     basicText: His eyes widen as if you had just revealed that his favorite character
       in Game of Cats was alive.
     choice: []
@@ -84,7 +84,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 2
-    music: 0
+    music: 3
     basicText: The Exam!? How many more days until the exam?
     choice: []
   - isDialog: 1
@@ -92,7 +92,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 3
     basicText: It's in a few days, Picatso. Will you be ready?
     choice: []
   - isDialog: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 3
     basicText: The feline shifts in his seat awkwardly.
     choice: []
   - isDialog: 1
@@ -108,7 +108,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 0
-    music: 0
+    music: 3
     basicText: Um... Can I be honest with you, Teacher?
     choice: []
   - isDialog: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 3
     basicText: You nod, giving him your full attention as you lean in and stare intently
       at the screen.
     choice: []
@@ -125,7 +125,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 2
-    music: 0
+    music: 2
     basicText: I... I have artist's block!
     choice: []
   - isDialog: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 2
     basicText: A look of devastation crosses his face before he lets it fall into
       his desk.
     choice: []
@@ -142,7 +142,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 2
     basicText: P-Picatso? What is blocking you exactly?
     choice: []
   - isDialog: 1
@@ -150,7 +150,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 2
-    music: 0
+    music: 2
     basicText: My latest piece; there is neither sense of life nor joys!
     choice: []
   - isDialog: 1
@@ -158,7 +158,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 2
-    music: 0
+    music: 2
     basicText: '''Tis a vast shipwreck of my life''s esteems!'
     choice: []
   - isDialog: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 2
     basicText: His words are slightly muffled as he rambles on, gesturing with his
       hands but not lifting his head even once.
     choice: []
@@ -175,7 +175,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 2
     basicText: Can I see your painting?
     choice: []
   - isDialog: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 2
     basicText: He freezes mid-gesture, looking up at you with teary eyes.
     choice: []
   - isDialog: 1
@@ -191,7 +191,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 2
-    music: 0
+    music: 2
     basicText: Do you think... you could help me, Teacher?
     choice: []
   - isDialog: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 2
     basicText: Before you can respond, the boy dashes over to his easel and picks
       up his unfinished painting.
     choice: []
@@ -208,7 +208,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 2
     basicText: Within seconds he has the canvas shoved in front of the camera, eagerly
       awaiting your response. Only part of it was painted, with most of the art piece
       still in sketch form.
@@ -218,7 +218,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 2
     basicText: The beautiful composition was of a quiet lake in the moonlight, with
       one lone boat floating in the middle.
     choice: []
@@ -227,7 +227,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 3
+    music: 2
     basicText: In the boat, there was figure that looked strangely like the popular
       TV show character Pikatsu.
     choice: []
@@ -236,7 +236,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 2
     basicText: Is that Pikatsu?
     choice: []
   - isDialog: 1
@@ -244,7 +244,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 1
-    music: 0
+    music: 2
     basicText: 'No, no! It''s a self expression of my mind; a vast living sea of
       waking dreams! '
     choice: []
@@ -253,7 +253,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 2
-    music: 0
+    music: 2
     basicText: Yet, it feels like something is missing...
     choice: []
   - isDialog: 0
@@ -261,7 +261,7 @@ MonoBehaviour:
     isChoice: 1
     characterName: 
     emotion: 2
-    music: 0
+    music: 2
     basicText: What will you do?
     choice:
     - choiceText: Reassure him that the painting is fine.

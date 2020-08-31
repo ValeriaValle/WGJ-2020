@@ -18,7 +18,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 2
     basicText: What if you add another person on the boat?
     choice: []
   - isDialog: 1
@@ -26,7 +26,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 0
-    music: 0
+    music: 2
     basicText: Another person?
     choice: []
   - isDialog: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 0
-    music: 0
+    music: 2
     basicText: Yes. This painting is a representation of your mind, and you are asking
       for another person's input. So... why not put another person in the boat?
     choice: []
@@ -43,7 +43,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 2
     basicText: He stifles a laugh at your silly pun, but considers your suggestion
       carefully.
     choice: []
@@ -52,7 +52,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 1
-    music: 0
+    music: 4
     basicText: You... are one that cares and knows... my heart, my art, unforsaken
       like a cherished memory... EUREKA!
     choice: []
@@ -61,7 +61,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 4
     basicText: The canvas is quickly taken away from the camera, as Picatso quickly
       grabs a pencil and starts sketching in his new design. Within minutes, he has
       it back up to show you the alteration he made.
@@ -71,7 +71,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 4
     basicText: A light sketch of a second person was added to the boat, holding oars
       that were dipped into the water's surface.
     choice: []
@@ -80,7 +80,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 1
-    music: 0
+    music: 4
     basicText: It's you teacher; because you are guiding me through the waters of
       life, teaching me how to succeed!
     choice: []
@@ -89,7 +89,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 1
-    music: 0
+    music: 4
     basicText: He pulled the painting back so you could see his proud smile. You
       felt your heart swell at his wholesome words.
     choice: []
@@ -98,7 +98,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 1
-    music: 0
+    music: 4
     basicText: Now that I know how to finish my painting, I'll have more time to
       study for the exam. Thank you for helping me, Teacher!
     choice: []
@@ -107,7 +107,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 1
-    music: 0
+    music: 4
     basicText: Picatso cheerfully moves to put his painting back on the easel, returning
       to his chair with a spring in his step.
     choice: []

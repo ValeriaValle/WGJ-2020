@@ -36,7 +36,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 0
-    music: 0
+    music: 3
     basicText: ...No.
     choice: []
   - isDialog: 1
@@ -44,7 +44,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 0
-    music: 0
+    music: 3
     basicText: ...No?
     choice: []
   - isDialog: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 3
     basicText: Takohiki doesn't respond, causing you to feel a little frustrated.
     choice: []
   - isDialog: 1
@@ -60,7 +60,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 0
-    music: 0
+    music: 3
     basicText: Takohiki, I'd like to help you improve your grades. But if you don't
       cooperate with me, then we can't do anything about it
     choice: []
@@ -69,7 +69,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 3
     basicText: As if tired of your nagging, Takohiki appears to sigh before shoving
       their notebook in front of the camera.
     choice: []
@@ -78,7 +78,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 3
     basicText: A bunch of characters are written in sequence, but you aren't exactly
       sure what they represent
     choice: []
@@ -87,7 +87,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 2
-    music: 0
+    music: 3
     basicText: Can you read Mataurian, Teacher?
     choice: []
   - isDialog: 1
@@ -95,7 +95,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 3
     basicText: ...
     choice: []
   - isDialog: 1
@@ -103,7 +103,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 2
-    music: 0
+    music: 3
     basicText: I didn't think so.
     choice: []
   - isDialog: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 3
     basicText: The notebook is taken away from the screen, and you feel a little
       ashamed for not realizing that could have been an issue.
     choice: []
@@ -120,7 +120,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 3
     basicText: Well... I still want to help you improve your grades somehow...
     choice: []
   - isDialog: 1
@@ -128,7 +128,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 2
-    music: 0
+    music: 3
     basicText: There isn't anything you can do but teach, so I'd appreciate it if
       you didn't try to over step your boundaries, Teacher.
     choice: []
@@ -137,7 +137,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 3
     basicText: Their words stab you like a knife; it felt like they thought you were
       at fault for not teaching well.
     choice: []
@@ -146,7 +146,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 2
-    music: 0
+    music: 3
     basicText: Now do you understand?
     choice: []
   - isDialog: 0
@@ -154,7 +154,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 3
     basicText: You take a deep breath to calm yourself, but it is hard to relax when
       you feel so attacked.
     choice: []
@@ -163,7 +163,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 3
     basicText: I... think that maybe we can talk another day.
     choice: []
   - isDialog: 1
@@ -171,7 +171,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Takohiki
     emotion: 0
-    music: 0
+    music: 3
     basicText: '''Kay'
     choice: []
   - isDialog: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 3
     basicText: You abruptly end the call, and put your head between your hands.
     choice: []
   - isDialog: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 3
     basicText: That did not go very well at all. You would definitely have to consider
       changing your approach if you want them to pass.
     choice: []

@@ -60,7 +60,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 0
-    music: 0
+    music: 3
     basicText: Thank you, Teacher. But...
     choice: []
   - isDialog: 1
@@ -68,7 +68,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 0
-    music: 0
+    music: 3
     basicText: Yes?
     choice: []
   - isDialog: 1
@@ -76,7 +76,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 3
     basicText: Um... I am worried it will not be enough.
     choice: []
   - isDialog: 0
@@ -84,7 +84,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 3
     basicText: Tris fidgets with her nails again, as if unsure of herself.
     choice: []
   - isDialog: 1
@@ -92,7 +92,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 3
     basicText: What do you mean? Is there something you need me to explain?
     choice: []
   - isDialog: 1
@@ -100,7 +100,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 3
     basicText: It's not that; you are a great Teacher! But... But what if I forget
       everything before the exam?
     choice: []
@@ -109,7 +109,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 3
     basicText: Or what if I read all the questions wrong?! I can't afford to fail...
     choice: []
   - isDialog: 1
@@ -117,7 +117,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 3
     basicText: Well, you have done alright in your past tests.
     choice: []
   - isDialog: 1
@@ -125,7 +125,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 3
     basicText: Yes, but I need to do better! Plus my brother-
     choice: []
   - isDialog: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
     isChoice: 1
     characterName: 
     emotion: 2
-    music: 0
+    music: 3
     basicText: She pauses abruptly before quieting.
     choice:
     - choiceText: Tell her not to push herself.
