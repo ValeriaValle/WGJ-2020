@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3517588762774137937}
   - component: {fileID: 3517588762774137938}
+  - component: {fileID: 5877492139596164104}
   m_Layer: 0
   m_Name: MusicTracksManager
   m_TagString: Untagged
@@ -44,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicIdx: {fileID: 11400000, guid: 4c780dd5d2d2cac4092ba0f2995605c7, type: 2}
+  musicFading: {fileID: 11400000, guid: 09322e74c5e346a4c9ff30e950697444, type: 2}
   clips:
   - {fileID: 8300000, guid: 83aef68153db23d448fbc7cbf3324ab5, type: 3}
   - {fileID: 8300000, guid: 7c60c7aadfda1e74ea48d1ed20f63d14, type: 3}
@@ -51,3 +53,48 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fbd8a020e04c9e349a786a043ff9bd0d, type: 3}
   - {fileID: 8300000, guid: 956ddbe8c4f15164e992430b8eae64de, type: 3}
   duration: 0.5
+  fadeMusic:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e8e66ea06163eb0449820ae28ca1563e, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Fade
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5877492139596164104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517588762774137948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e790cd217109a467a9453f8d9441503e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listEvents:
+  - eventName: ChangeClip
+    Event: {fileID: 11400000, guid: ef1854309d82819489bd3d222ef075a1, type: 2}
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3517588762774137938}
+          m_TargetAssemblyTypeName: MusicManager, Assembly-CSharp
+          m_MethodName: ChangeClip
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

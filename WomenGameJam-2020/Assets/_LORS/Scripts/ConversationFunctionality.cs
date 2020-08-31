@@ -47,7 +47,7 @@ public class ConversationFunctionality : MonoBehaviour
     [SerializeField]
     private GenericInt day = null;
     [SerializeField]
-    private GenericInt musicIdx;
+    private GenericInt musicIdx = null;
 
     private int flowIdx = 0;
     private int masterIdx = 0;

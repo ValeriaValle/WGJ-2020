@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.Events;
 using UnityTools.ScriptableVariables;
 
 public class MusicManager : MonoBehaviour
@@ -7,14 +7,16 @@ public class MusicManager : MonoBehaviour
     #region VARIABLES
 
     [SerializeField]
-    private GenericInt musicIdx;
+    private GenericInt musicIdx = null;
+    [SerializeField]
+    private GenericBool musicFading = null;
     private int currentIdx = 0;
 
     [SerializeField]
-    private AudioClip[] clips;
+    private AudioClip[] clips = null;
     private AudioSource music;
-    [SerializeField]
-    private float duration;
+
+    public UnityEvent fadeMusic;
 
     #endregion
 
@@ -22,22 +24,28 @@ public class MusicManager : MonoBehaviour
     void Start()
     {
         music = GameObject.FindWithTag("Audio/Music").GetComponent<AudioSource>();
+        musicFading.var = false;
     }
 
     #endregion
 
     #region OTHER_METHODS
 
+    public void FadeMusic()
+    {
+        if (currentIdx != musicIdx.var && !musicFading.var)
+        {
+            fadeMusic.Invoke();
+            musicFading.var = true;
+        }
+    }
+
     public void ChangeClip()
     {
-        if (currentIdx != musicIdx.var)
-        {
-            StartCoroutine(FadeAudioSource.StartFade(music, duration, 0f));
-            music.Stop();
-            music.clip = clips[musicIdx.var];
-            music.Play();
-            currentIdx = musicIdx.var;
-        }
+        music.Stop();
+        music.clip = clips[musicIdx.var];
+        music.Play();
+        currentIdx = musicIdx.var;
     }
     #endregion
 }

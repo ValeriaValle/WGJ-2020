@@ -2489,7 +2489,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5320613137060440804}
         m_TargetAssemblyTypeName: MusicManager, Assembly-CSharp
-        m_MethodName: ChangeClip
+        m_MethodName: FadeMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
