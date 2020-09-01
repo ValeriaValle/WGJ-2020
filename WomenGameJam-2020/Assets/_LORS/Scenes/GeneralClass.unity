@@ -148,16 +148,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18971046}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1633539568}
-  m_RootOrder: 6
+  m_Father: {fileID: 1367246584}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -541, y: -157.8}
+  m_AnchoredPosition: {x: -541, y: -181.8}
   m_SizeDelta: {x: 250, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &18971048
@@ -394,9 +394,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 130940355}
-  - {fileID: 888236175}
+  m_Children: []
   m_Father: {fileID: 1069897443}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -483,6 +481,7 @@ GameObject:
   - component: {fileID: 130940355}
   - component: {fileID: 130940357}
   - component: {fileID: 130940356}
+  - component: {fileID: 130940358}
   m_Layer: 5
   m_Name: StudentCall
   m_TagString: Untagged
@@ -500,9 +499,14 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 58927498}
-  m_RootOrder: 0
+  m_Children:
+  - {fileID: 888236175}
+  - {fileID: 887783167}
+  - {fileID: 1855709423}
+  - {fileID: 2143558972}
+  - {fileID: 1830520707}
+  m_Father: {fileID: 1069897443}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -547,6 +551,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130940354}
   m_CullTransparentMesh: 0
+--- !u!95 &130940358
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130940354}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 000da8a57a5dfe3428470fc433670413, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &163401354
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +728,7 @@ GameObject:
   - component: {fileID: 168625705}
   - component: {fileID: 168625709}
   m_Layer: 5
-  m_Name: PaintCans
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -745,6 +768,9 @@ MonoBehaviour:
   objectDescription: There are a few paint cans left open; how recently was Picatso
     using them?
   descriptionText: {fileID: 1282716768658378834}
+  displayText_Objects:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &168625706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,8 +792,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.916566, b: 0.6839622, a: 1}
+    m_PressedColor: {r: 0.98039216, g: 0.8509804, b: 0.49019608, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -801,8 +827,32 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 168625705}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: StopAllCoroutines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 168625705}
         m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
         m_MethodName: ShowDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 729cfe8204fc20745837ea1752ba50ff, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -991,6 +1041,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 184732562}
+  - component: {fileID: 184732563}
   m_Layer: 5
   m_Name: InteractiveElements
   m_TagString: Untagged
@@ -1013,14 +1064,33 @@ RectTransform:
   - {fileID: 444220018}
   - {fileID: 1375367857}
   - {fileID: 569446413}
-  m_Father: {fileID: 1859815018}
-  m_RootOrder: 5
+  m_Father: {fileID: 2058644642}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -24.000004}
+  m_SizeDelta: {x: 540.9055, y: 411.05334}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &184732563
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184732561}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09acf6693af3a844ca17de09838dccd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &219780070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,7 +1106,7 @@ GameObject:
   - component: {fileID: 219780072}
   - component: {fileID: 219780076}
   m_Layer: 5
-  m_Name: GameConsole
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1076,6 +1146,9 @@ MonoBehaviour:
   objectDescription: The power light of the Game Station 4 in Takohiki's room is
     on. There is a controller attached, but the wire disappears under their desk.
   descriptionText: {fileID: 1282716768658378834}
+  displayText_Objects:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &219780073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1097,8 +1170,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.916566, b: 0.6839622, a: 1}
+    m_PressedColor: {r: 0.98039216, g: 0.8509804, b: 0.49019608, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1131,9 +1204,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
-        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
-        m_MethodName: Raise
+      - m_Target: {fileID: 219780072}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: StopAllCoroutines
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1146,6 +1219,30 @@ MonoBehaviour:
       - m_Target: {fileID: 219780072}
         m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
         m_MethodName: ShowDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 729cfe8204fc20745837ea1752ba50ff, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1168,7 +1265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.42745098, b: 0.41960785, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1269,7 +1366,7 @@ RectTransform:
   m_Children:
   - {fileID: 296059671}
   m_Father: {fileID: 1859815018}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1407,7 +1504,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+      - m_Target: {fileID: 11400000, guid: 351fe53e31d75244b98b66c5859b46f3, type: 2}
         m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -1510,6 +1607,7 @@ GameObject:
   - component: {fileID: 296059671}
   - component: {fileID: 296059673}
   - component: {fileID: 296059672}
+  - component: {fileID: 296059674}
   m_Layer: 5
   m_Name: Pop-Up
   m_TagString: Untagged
@@ -1577,6 +1675,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296059670}
   m_CullTransparentMesh: 0
+--- !u!95 &296059674
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296059670}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 000da8a57a5dfe3428470fc433670413, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &309649301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,7 +2096,7 @@ GameObject:
   - component: {fileID: 373231101}
   - component: {fileID: 373231105}
   m_Layer: 5
-  m_Name: Easel
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2019,6 +2136,9 @@ MonoBehaviour:
   objectDescription: It looks like Picatso was working on a new painting, but hasn't
     quite finished it yet.
   descriptionText: {fileID: 1282716768658378834}
+  displayText_Objects:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &373231102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2040,8 +2160,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.916566, b: 0.6839622, a: 1}
+    m_PressedColor: {r: 0.98039216, g: 0.8509804, b: 0.49019608, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2075,8 +2195,32 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 373231101}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: StopAllCoroutines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 373231101}
         m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
         m_MethodName: ShowDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 729cfe8204fc20745837ea1752ba50ff, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2196,7 +2340,7 @@ GameObject:
   - component: {fileID: 374673594}
   - component: {fileID: 374673598}
   m_Layer: 5
-  m_Name: LoZ
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2236,6 +2380,9 @@ MonoBehaviour:
   objectDescription: A limited edition guide for the popular game 'The Legend of
     Zoth' lies open on the desk.
   descriptionText: {fileID: 1282716768658378834}
+  displayText_Objects:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &374673595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2257,8 +2404,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.916566, b: 0.6839622, a: 1}
+    m_PressedColor: {r: 0.98039216, g: 0.8509804, b: 0.49019608, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2291,9 +2438,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
-        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
-        m_MethodName: Raise
+      - m_Target: {fileID: 374673594}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: StopAllCoroutines
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2306,6 +2453,30 @@ MonoBehaviour:
       - m_Target: {fileID: 374673594}
         m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
         m_MethodName: ShowDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 729cfe8204fc20745837ea1752ba50ff, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2328,7 +2499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.42745098, b: 0.41960785, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2809,7 +2980,7 @@ GameObject:
   - component: {fileID: 444220019}
   - component: {fileID: 444220023}
   m_Layer: 5
-  m_Name: TennisTrophy
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2849,6 +3020,9 @@ MonoBehaviour:
   objectDescription: It's a shiny golden trophy. Her parents must be proud of her
     for winning first place.
   descriptionText: {fileID: 1282716768658378834}
+  displayText_Objects:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &444220020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2870,8 +3044,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.916566, b: 0.6839622, a: 1}
+    m_PressedColor: {r: 0.98039216, g: 0.8509804, b: 0.49019608, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2905,8 +3079,32 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 444220019}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: StopAllCoroutines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 444220019}
         m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
         m_MethodName: ShowDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 729cfe8204fc20745837ea1752ba50ff, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2941,7 +3139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.42745098, b: 0.41960785, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4075,6 +4273,71 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!1001 &790865529
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2133423822134265185, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_Name
+      value: DisplayText
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265186, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: displayTexts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265186, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: displayTexts.Array.data[0]
+      value: 
+      objectReference: {fileID: 1282716768658378834}
+    - target: {fileID: 2133423822134265187, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265187, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265187, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265187, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265187, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265187, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265187, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265187, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265187, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265187, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133423822134265187, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6717f39815b5a3439b7ef56e7fd68e2, type: 3}
 --- !u!1 &799225263
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,12 +4504,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1633539568}
+  m_Father: {fileID: 1367246584}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -253.2}
+  m_AnchoredPosition: {x: 0, y: -277.19998}
   m_SizeDelta: {x: 92, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &829124492
@@ -4304,7 +4567,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+      - m_Target: {fileID: 11400000, guid: 3efd63a8d5e621446aaeac82e37cd0de, type: 2}
         m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -4459,13 +4722,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1069897443}
+  m_Father: {fileID: 130940355}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -24.000004}
+  m_SizeDelta: {x: 540.9055, y: 411.05334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &887783168
 MonoBehaviour:
@@ -4566,12 +4829,12 @@ RectTransform:
   m_Children:
   - {fileID: 1275407795}
   - {fileID: 537631029}
-  m_Father: {fileID: 58927498}
-  m_RootOrder: 1
+  m_Father: {fileID: 130940355}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 73.814}
+  m_AnchoredPosition: {x: 0, y: 49.814}
   m_SizeDelta: {x: 1379, y: 569.3723}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &888236176
@@ -4843,6 +5106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 971201765}
+  - component: {fileID: 971201766}
   m_Layer: 5
   m_Name: InteractiveElements
   m_TagString: Untagged
@@ -4864,14 +5128,33 @@ RectTransform:
   - {fileID: 373231100}
   - {fileID: 168625704}
   - {fileID: 1183749766}
-  m_Father: {fileID: 1633539568}
-  m_RootOrder: 5
+  m_Father: {fileID: 1367246584}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -24.000004}
+  m_SizeDelta: {x: 540.9055, y: 411.05334}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &971201766
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971201764}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09acf6693af3a844ca17de09838dccd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1057870400
 GameObject:
   m_ObjectHideFlags: 0
@@ -4965,7 +5248,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+      - m_Target: {fileID: 11400000, guid: 351fe53e31d75244b98b66c5859b46f3, type: 2}
         m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -5043,12 +5326,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 58927498}
-  - {fileID: 887783167}
+  - {fileID: 130940355}
   - {fileID: 1830320951}
   - {fileID: 1723760066}
-  - {fileID: 1830520707}
-  - {fileID: 1855709423}
-  - {fileID: 2143558972}
   - {fileID: 1555292217}
   m_Father: {fileID: 1855620915}
   m_RootOrder: 1
@@ -5226,16 +5506,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129989647}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1859815018}
-  m_RootOrder: 6
+  m_Father: {fileID: 2058644642}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -541, y: -157.8}
+  m_AnchoredPosition: {x: -541, y: -181.8}
   m_SizeDelta: {x: 250, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1129989649
@@ -5383,7 +5663,7 @@ GameObject:
   - component: {fileID: 1183749767}
   - component: {fileID: 1183749771}
   m_Layer: 5
-  m_Name: ArtSupplies
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5423,6 +5703,9 @@ MonoBehaviour:
   objectDescription: Brushes, pencils, tissues soiled with paint; it looks like a
     mini tornado of art supplies went through Picatso's room.
   descriptionText: {fileID: 1282716768658378834}
+  displayText_Objects:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1183749768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5444,8 +5727,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.916566, b: 0.6839622, a: 1}
+    m_PressedColor: {r: 0.98039216, g: 0.8509804, b: 0.49019608, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5479,8 +5762,32 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1183749767}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: StopAllCoroutines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1183749767}
         m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
         m_MethodName: ShowDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 729cfe8204fc20745837ea1752ba50ff, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5613,9 +5920,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1367246584}
-  - {fileID: 1780662891}
+  m_Children: []
   m_Father: {fileID: 1633539568}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5852,6 +6157,21 @@ MonoBehaviour:
   - {fileID: 1633539567}
   - {fileID: 1069897442}
   - {fileID: 1859815017}
+  displayText_class:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 729cfe8204fc20745837ea1752ba50ff, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1315006192
 Transform:
   m_ObjectHideFlags: 0
@@ -5957,6 +6277,7 @@ GameObject:
   - component: {fileID: 1367246584}
   - component: {fileID: 1367246586}
   - component: {fileID: 1367246585}
+  - component: {fileID: 1367246587}
   m_Layer: 5
   m_Name: StudentCall
   m_TagString: Untagged
@@ -5974,9 +6295,14 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1261639542}
-  m_RootOrder: 0
+  m_Children:
+  - {fileID: 1780662891}
+  - {fileID: 1935730000}
+  - {fileID: 971201765}
+  - {fileID: 18971047}
+  - {fileID: 829124491}
+  m_Father: {fileID: 1633539568}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6021,6 +6347,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367246583}
   m_CullTransparentMesh: 0
+--- !u!95 &1367246587
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367246583}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 000da8a57a5dfe3428470fc433670413, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1375367856
 GameObject:
   m_ObjectHideFlags: 0
@@ -6036,7 +6381,7 @@ GameObject:
   - component: {fileID: 1375367858}
   - component: {fileID: 1375367862}
   m_Layer: 5
-  m_Name: Yurok
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6076,6 +6421,9 @@ MonoBehaviour:
   objectDescription: A Yurok, which is a religious text, sits on the back table.
     Is Tris' family Yudech?
   descriptionText: {fileID: 1282716768658378834}
+  displayText_Objects:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1375367859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6097,8 +6445,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.916566, b: 0.6839622, a: 1}
+    m_PressedColor: {r: 0.98039216, g: 0.8509804, b: 0.49019608, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -6132,8 +6480,32 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1375367858}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: StopAllCoroutines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1375367858}
         m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
         m_MethodName: ShowDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 729cfe8204fc20745837ea1752ba50ff, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6168,7 +6540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.42745098, b: 0.41960785, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6331,7 +6703,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+      - m_Target: {fileID: 11400000, guid: 351fe53e31d75244b98b66c5859b46f3, type: 2}
         m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -6411,13 +6783,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1859815018}
+  m_Father: {fileID: 2058644642}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -24.000004}
+  m_SizeDelta: {x: 540.9055, y: 411.05334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455546980
 MonoBehaviour:
@@ -6515,9 +6887,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2058644642}
-  - {fileID: 1960483308}
+  m_Children: []
   m_Father: {fileID: 1859815018}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6836,7 +7206,7 @@ RectTransform:
   m_Children:
   - {fileID: 1767656610}
   m_Father: {fileID: 1069897443}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7122,7 +7492,7 @@ GameObject:
   - component: {fileID: 1588329699}
   - component: {fileID: 1588329703}
   m_Layer: 5
-  m_Name: Carnetos
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7163,6 +7533,9 @@ MonoBehaviour:
     touched it at all. It's weird considering how many tentacles they can use to
     snack on it while studying during class.
   descriptionText: {fileID: 1282716768658378834}
+  displayText_Objects:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1588329700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7184,8 +7557,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.916566, b: 0.6839622, a: 1}
+    m_PressedColor: {r: 0.98039216, g: 0.8509804, b: 0.49019608, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7218,9 +7591,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
-        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
-        m_MethodName: Raise
+      - m_Target: {fileID: 1588329699}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: StopAllCoroutines
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7233,6 +7606,30 @@ MonoBehaviour:
       - m_Target: {fileID: 1588329699}
         m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
         m_MethodName: ShowDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 729cfe8204fc20745837ea1752ba50ff, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7255,7 +7652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.42745098, b: 0.41960785, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7353,12 +7750,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1261639542}
-  - {fileID: 1935730000}
+  - {fileID: 1367246584}
   - {fileID: 396887414}
   - {fileID: 2117299526}
-  - {fileID: 829124491}
-  - {fileID: 971201765}
-  - {fileID: 18971047}
   - {fileID: 7475811364764450382}
   m_Father: {fileID: 1855620915}
   m_RootOrder: 0
@@ -7536,7 +7930,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+      - m_Target: {fileID: 11400000, guid: 351fe53e31d75244b98b66c5859b46f3, type: 2}
         m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -7597,6 +7991,7 @@ GameObject:
   - component: {fileID: 1767656610}
   - component: {fileID: 1767656612}
   - component: {fileID: 1767656611}
+  - component: {fileID: 1767656613}
   m_Layer: 5
   m_Name: Pop-Up
   m_TagString: Untagged
@@ -7664,6 +8059,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767656609}
   m_CullTransparentMesh: 0
+--- !u!95 &1767656613
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767656609}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 000da8a57a5dfe3428470fc433670413, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1780662890
 GameObject:
   m_ObjectHideFlags: 0
@@ -7696,12 +8110,12 @@ RectTransform:
   m_Children:
   - {fileID: 1952591404}
   - {fileID: 598570313}
-  m_Father: {fileID: 1261639542}
-  m_RootOrder: 1
+  m_Father: {fileID: 1367246584}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 73.814}
+  m_AnchoredPosition: {x: 0, y: 49.814}
   m_SizeDelta: {x: 1379, y: 569.3723}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1780662892
@@ -7770,7 +8184,7 @@ GameObject:
   - component: {fileID: 1789603460}
   - component: {fileID: 1789603464}
   m_Layer: 5
-  m_Name: Photo
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7810,6 +8224,9 @@ MonoBehaviour:
   objectDescription: It looks to be a family photo. Both Tris' parents and her brothers
     are present, but she appears to be missing. Who is the little boy in the picture?
   descriptionText: {fileID: 1282716768658378834}
+  displayText_Objects:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1789603461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7831,8 +8248,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.916566, b: 0.6839622, a: 1}
+    m_PressedColor: {r: 0.98039216, g: 0.8509804, b: 0.49019608, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7866,8 +8283,32 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1789603460}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: StopAllCoroutines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1789603460}
         m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
         m_MethodName: ShowDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 729cfe8204fc20745837ea1752ba50ff, type: 2}
+        m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7902,7 +8343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.42745098, b: 0.41960785, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8235,12 +8676,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1069897443}
+  m_Father: {fileID: 130940355}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -253.2}
+  m_AnchoredPosition: {x: 0, y: -277.19998}
   m_SizeDelta: {x: 92, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830520708
@@ -8298,7 +8739,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+      - m_Target: {fileID: 11400000, guid: 3efd63a8d5e621446aaeac82e37cd0de, type: 2}
         m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -8487,6 +8928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1855709423}
+  - component: {fileID: 1855709424}
   m_Layer: 5
   m_Name: InteractiveElements
   m_TagString: Untagged
@@ -8509,14 +8951,33 @@ RectTransform:
   - {fileID: 1588329698}
   - {fileID: 374673593}
   - {fileID: 1553995134}
-  m_Father: {fileID: 1069897443}
-  m_RootOrder: 5
+  m_Father: {fileID: 130940355}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -24.000004}
+  m_SizeDelta: {x: 540.9055, y: 411.05334}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1855709424
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855709422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09acf6693af3a844ca17de09838dccd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1859815017
 GameObject:
   m_ObjectHideFlags: 0
@@ -8545,12 +9006,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1498859008}
-  - {fileID: 1455546979}
+  - {fileID: 2058644642}
   - {fileID: 31425516}
   - {fileID: 274509449}
-  - {fileID: 1901028869}
-  - {fileID: 184732562}
-  - {fileID: 1129989648}
   - {fileID: 258600744}
   m_Father: {fileID: 1855620915}
   m_RootOrder: 2
@@ -8590,12 +9048,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1859815018}
+  m_Father: {fileID: 2058644642}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -253.2}
+  m_AnchoredPosition: {x: 0, y: -277.19998}
   m_SizeDelta: {x: 92, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1901028870
@@ -8653,7 +9111,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+      - m_Target: {fileID: 11400000, guid: 3efd63a8d5e621446aaeac82e37cd0de, type: 2}
         m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -8733,13 +9191,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1633539568}
+  m_Father: {fileID: 1367246584}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -24.000004}
+  m_SizeDelta: {x: 540.9055, y: 411.05334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1935730001
 MonoBehaviour:
@@ -8762,6 +9220,42 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_MethodName: SetActive
           m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 373231101}
+          m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 168625705}
+          m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1183749767}
+          m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8916,12 +9410,12 @@ RectTransform:
   - {fileID: 549013670}
   - {fileID: 1694756791}
   - {fileID: 1362236240}
-  m_Father: {fileID: 1498859008}
-  m_RootOrder: 1
+  m_Father: {fileID: 2058644642}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 73.814}
+  m_AnchoredPosition: {x: 0, y: 49.814}
   m_SizeDelta: {x: 1379, y: 569.3723}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1960483309
@@ -9043,6 +9537,7 @@ GameObject:
   - component: {fileID: 2058644642}
   - component: {fileID: 2058644644}
   - component: {fileID: 2058644643}
+  - component: {fileID: 2058644645}
   m_Layer: 5
   m_Name: StudentCall
   m_TagString: Untagged
@@ -9060,9 +9555,14 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1498859008}
-  m_RootOrder: 0
+  m_Children:
+  - {fileID: 1960483308}
+  - {fileID: 1455546979}
+  - {fileID: 184732562}
+  - {fileID: 1129989648}
+  - {fileID: 1901028869}
+  m_Father: {fileID: 1859815018}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9107,6 +9607,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058644641}
   m_CullTransparentMesh: 0
+--- !u!95 &2058644645
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058644641}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 000da8a57a5dfe3428470fc433670413, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2111182174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9116,10 +9635,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
       propertyPath: listEvents.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
       propertyPath: listEvents.Array.data[3].Response.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
+      propertyPath: listEvents.Array.data[4].Response.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
@@ -9156,6 +9679,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
       propertyPath: listEvents.Array.data[3].Response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
+      propertyPath: listEvents.Array.data[4].eventName
+      value: DataSound_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
+      propertyPath: listEvents.Array.data[4].Event
+      value: 
+      objectReference: {fileID: 11400000, guid: 351fe53e31d75244b98b66c5859b46f3, type: 2}
+    - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
+      propertyPath: listEvents.Array.data[4].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1333856099}
+    - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
+      propertyPath: listEvents.Array.data[4].Response.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
+      propertyPath: listEvents.Array.data[4].Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
+      propertyPath: listEvents.Array.data[4].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
+      propertyPath: listEvents.Array.data[4].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: c04c97504c97c444880b5d4857ce5d0d, type: 3}
+    - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
+      propertyPath: listEvents.Array.data[4].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1320329399, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
+      propertyPath: listEvents.Array.data[4].Response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 922031580077474974, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
@@ -9305,7 +9864,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 002b70c0617cd5b4b824293bebf0836f, type: 2}
+      - m_Target: {fileID: 11400000, guid: 351fe53e31d75244b98b66c5859b46f3, type: 2}
         m_TargetAssemblyTypeName: UnityTools.Events.GameEventMultiple, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -9455,16 +10014,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143558971}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1069897443}
-  m_RootOrder: 6
+  m_Father: {fileID: 130940355}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -541, y: -157.8}
+  m_AnchoredPosition: {x: -541, y: -181.8}
   m_SizeDelta: {x: 250, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2143558973
@@ -9516,6 +10075,7 @@ GameObject:
   - component: {fileID: 3305436199285530113}
   - component: {fileID: 8148645707268038459}
   - component: {fileID: 7724689149881655716}
+  - component: {fileID: 17639473291582531}
   m_Layer: 5
   m_Name: NarrationBox
   m_TagString: Untagged
@@ -9523,6 +10083,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &17639473291582531
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17639473291582530}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 000da8a57a5dfe3428470fc433670413, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!222 &178704658204623099
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9887,7 +10466,7 @@ MonoBehaviour:
   m_fontSizeMax: 42
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -9932,6 +10511,7 @@ GameObject:
   - component: {fileID: 5776558295922287979}
   - component: {fileID: 4462879878911136873}
   - component: {fileID: 7579027312389237575}
+  - component: {fileID: 2028260656310966374}
   m_Layer: 5
   m_Name: Pop-Up_Exit
   m_TagString: Untagged
@@ -9939,6 +10519,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &2028260656310966374
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028260656310966373}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 000da8a57a5dfe3428470fc433670413, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!224 &2155820339841088479
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10224,8 +10823,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000049114, y: 0.0000046492}
-  m_SizeDelta: {x: 1515.6659, y: 179.68704}
+  m_AnchoredPosition: {x: 0.000021035, y: -0.0000038146973}
+  m_SizeDelta: {x: 1515.6659, y: 142.10962}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5088888002491654925
 GameObject:
@@ -10765,7 +11364,7 @@ RectTransform:
   m_Children:
   - {fileID: 4507499361061347612}
   m_Father: {fileID: 1633539568}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10907,6 +11506,7 @@ GameObject:
   - component: {fileID: 4507499361061347612}
   - component: {fileID: 6001321902749552670}
   - component: {fileID: 543161822747143984}
+  - component: {fileID: 8251293470636170259}
   m_Layer: 5
   m_Name: Pop-Up
   m_TagString: Untagged
@@ -10914,6 +11514,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &8251293470636170259
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8251293470636170258}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 000da8a57a5dfe3428470fc433670413, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!222 &8409056484931410340
 CanvasRenderer:
   m_ObjectHideFlags: 0

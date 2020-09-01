@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityTools.ScriptableVariables;
 using TMPro;
 
 public class Intro : MonoBehaviour
@@ -9,6 +10,9 @@ public class Intro : MonoBehaviour
     [SerializeField]
     private ConversationMaster master = null;
     private TextElement flow;
+
+    [SerializeField]
+    private GenericInt tbTypeIdx = null;
 
     [Header("UI Variables")]
     [SerializeField]
@@ -25,6 +29,7 @@ public class Intro : MonoBehaviour
 
     public UnityEvent onEndFirstPart, onIntroEnd;
     public UnityEvent onKeyboardSound;
+    public UnityEvent displayText_Intro;
 
     #endregion
 
@@ -35,6 +40,7 @@ public class Intro : MonoBehaviour
         onKeyboardSound.Invoke();
         flow = master.flows[masterIdx].dialogFlow[flowIdx];
         narrationText.text = flow.basicText;
+        displayText_Intro.Invoke();
         flowIdx++;
     }
     #endregion
@@ -52,6 +58,8 @@ public class Intro : MonoBehaviour
                 narrationBox.SetActive(true);
                 dialogBox.SetActive(false);
                 narrationText.text = flow.basicText;
+                tbTypeIdx.var = 0;
+                displayText_Intro.Invoke();
                 flowIdx++;
             }
 
@@ -61,6 +69,8 @@ public class Intro : MonoBehaviour
                 dialogBox.SetActive(true);
                 dialogText.text = flow.basicText;
                 textCharacterName.text = flow.characterName;
+                tbTypeIdx.var = 1;
+                displayText_Intro.Invoke();
                 flowIdx++;
             }
         }

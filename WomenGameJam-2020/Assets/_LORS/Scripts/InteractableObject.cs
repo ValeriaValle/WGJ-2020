@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;
 using TMPro;
 
@@ -13,6 +14,8 @@ public class InteractableObject : MonoBehaviour
     private GameObject descriptionBox;
     private RectTransform rTrans;
 
+    public UnityEvent displayText_Objects;
+
     void Start()
     {
         descriptionBox = descriptionText.gameObject.transform.parent.gameObject;
@@ -22,6 +25,7 @@ public class InteractableObject : MonoBehaviour
     public void ShowDescription()
     {
         descriptionText.text = objectDescription;
+        displayText_Objects.Invoke();
         StartCoroutine(HideDescriptionBox(4.5f));
     }
 

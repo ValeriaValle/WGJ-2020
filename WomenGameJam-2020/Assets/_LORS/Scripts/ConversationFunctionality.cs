@@ -48,12 +48,15 @@ public class ConversationFunctionality : MonoBehaviour
     private GenericInt day = null;
     [SerializeField]
     private GenericInt musicIdx = null;
+    [SerializeField]
+    private GenericInt tbTypeIdx = null;
 
     private int flowIdx = 0;
     private int masterIdx = 0;
     private bool closingDone = false;
 
-    public UnityEvent onEndConvo, changeMusic, EndDay, EndGame;
+    public UnityEvent onEndConvo, changeMusic, displayText_Convo;
+    public UnityEvent EndDay, EndGame;
 
     #endregion
 
@@ -85,6 +88,8 @@ public class ConversationFunctionality : MonoBehaviour
                 interactablePanel.SetActive(true);
                 narrationBox.SetActive(true);
                 textNarration.text = flow.basicText;
+                tbTypeIdx.var = 0;
+                displayText_Convo.Invoke();
                 flowIdx++;
             }
             else if (flow.isDialog)
@@ -93,6 +98,8 @@ public class ConversationFunctionality : MonoBehaviour
                 dialogBox.SetActive(true);
                 textCharName.text = flow.characterName;
                 textDialog.text = flow.basicText;
+                tbTypeIdx.var = 1;
+                displayText_Convo.Invoke();
                 flowIdx++;
             }
             else if (flow.isChoice)
