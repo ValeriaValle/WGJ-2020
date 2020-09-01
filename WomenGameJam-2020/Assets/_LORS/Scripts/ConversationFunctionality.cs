@@ -46,12 +46,14 @@ public class ConversationFunctionality : MonoBehaviour
     private GenericBool characterPass = null;
     [SerializeField]
     private GenericInt day = null;
+    [SerializeField]
+    private GenericInt musicIdx = null;
 
     private int flowIdx = 0;
     private int masterIdx = 0;
     private bool closingDone = false;
 
-    public UnityEvent onEndConvo, EndDay, EndGame;
+    public UnityEvent onEndConvo, changeMusic, EndDay, EndGame;
 
     #endregion
 
@@ -60,6 +62,7 @@ public class ConversationFunctionality : MonoBehaviour
     void Start()
     {
         talkedToCharacter.var = true;
+        musicIdx.var = 0;
         Conversation();
     }
     #endregion
@@ -74,6 +77,8 @@ public class ConversationFunctionality : MonoBehaviour
         {
             flow = master.flows[masterIdx].dialogFlow[flowIdx];
             expressions[flow.emotion].SetActive(true);
+            musicIdx.var = flow.music;
+            changeMusic.Invoke();
 
             if (flow.isNarration)
             {
@@ -104,7 +109,6 @@ public class ConversationFunctionality : MonoBehaviour
         }
         else
         {
-            Debug.Log("EndConversation");
             onEndConvo.Invoke();
         }
     }

@@ -18,7 +18,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 1
-    music: 0
+    music: 4
     basicText: I think that's everything for today. I'm glad I was able to help you
       with your painting; I will let you go so you can finish it. Please show me
       the finished product when it is done!
@@ -28,7 +28,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 1
-    music: 0
+    music: 4
     basicText: Picatso nods excitedly, already leaning off of his chair; it was very
       likely that he would dash to his painting as soon as you hung up.
     choice: []
@@ -37,6 +37,6 @@ MonoBehaviour:
     isChoice: 0
     characterName: Picatso
     emotion: 1
-    music: 0
+    music: 4
     basicText: Of course!!
     choice: []

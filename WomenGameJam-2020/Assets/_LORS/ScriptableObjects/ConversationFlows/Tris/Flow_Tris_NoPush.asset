@@ -18,7 +18,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 3
     basicText: Tris, you don't have to force yourself; I believe in you.
     choice: []
   - isDialog: 1
@@ -26,7 +26,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 3
     basicText: I... just don't want to disappoint him. He flew to Fyuchew last week.
     choice: []
   - isDialog: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 3
     basicText: This is the first time I will be taking a test without my big brother
       here.
     choice: []
@@ -43,7 +43,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 3
     basicText: You pause for a moment to think, before putting your hand up to the
       camera.
     choice: []
@@ -52,7 +52,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 1
     basicText: T-teacher? What are you doing?
     choice: []
   - isDialog: 1
@@ -60,7 +60,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 1
     basicText: Can you put your hand on the camera too?
     choice: []
   - isDialog: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 1
     basicText: She hesitates, but raises her hand and covers the camera.
     choice: []
   - isDialog: 1
@@ -76,7 +76,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 1
     basicText: Okay. What should I do now?
     choice: []
   - isDialog: 1
@@ -84,7 +84,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 1
     basicText: Close your eyes.
     choice: []
   - isDialog: 1
@@ -92,7 +92,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 1
     basicText: ...
     choice: []
   - isDialog: 1
@@ -100,7 +100,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 1
     basicText: Are they closed?
     choice: []
   - isDialog: 1
@@ -108,7 +108,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 1
     basicText: Yes, Teacher.
     choice: []
   - isDialog: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 1
     basicText: Can you feel it?
     choice: []
   - isDialog: 1
@@ -124,7 +124,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 2
-    music: 0
+    music: 1
     basicText: ...?
     choice: []
   - isDialog: 1
@@ -132,7 +132,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 2
-    music: 0
+    music: 1
     basicText: Our hands are connected!
     choice: []
   - isDialog: 1
@@ -140,7 +140,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 0
-    music: 0
+    music: 1
     basicText: ...haha...
     choice: []
   - isDialog: 1
@@ -148,7 +148,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 1
-    music: 0
+    music: 4
     basicText: ... hahaha! What are you doing, Teacher?
     choice: []
   - isDialog: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 1
-    music: 0
+    music: 4
     basicText: The both of you remove your hands from the camera.
     choice: []
   - isDialog: 1
@@ -164,7 +164,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 1
-    music: 0
+    music: 4
     basicText: Before the exam, I want you to call your brother for a video call.
       Tell him how you feel, and I know he will be there together with you during
       this upcoming exam too.
@@ -174,7 +174,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 2
-    music: 0
+    music: 4
     basicText: Tris blinks in surprise, before tears start to form.
     choice: []
   - isDialog: 0
@@ -182,7 +182,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 1
-    music: 0
+    music: 4
     basicText: She gives you the brightest smile she can muster before wiping them
       away.
     choice: []
@@ -191,7 +191,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 1
-    music: 0
+    music: 4
     basicText: T-Thank you Teacher! I promise I will!
     choice: []
   - isDialog: 1
@@ -199,7 +199,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 1
-    music: 0
+    music: 4
     basicText: I know you will.
     choice: []
   - isDialog: 0
@@ -207,7 +207,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: 
     emotion: 0
-    music: 0
+    music: 4
     basicText: The both of you talk a bit about studying tips before deciding to
       call it a night.
     choice: []
@@ -216,7 +216,7 @@ MonoBehaviour:
     isChoice: 0
     characterName: Tris
     emotion: 1
-    music: 0
+    music: 4
     basicText: Goodnight Teacher!
     choice: []
   - isDialog: 1
@@ -224,6 +224,6 @@ MonoBehaviour:
     isChoice: 0
     characterName: You
     emotion: 1
-    music: 0
+    music: 4
     basicText: Goodnight Tris.
     choice: []
