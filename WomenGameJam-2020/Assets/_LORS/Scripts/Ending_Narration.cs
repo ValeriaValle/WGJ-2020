@@ -24,6 +24,7 @@ public class Ending_Narration : MonoBehaviour
     private int flowIdx = 0;
 
     public UnityEvent onMusicChange, onGameOver;
+    public UnityEvent displayText;
 
     #endregion
 
@@ -33,6 +34,7 @@ public class Ending_Narration : MonoBehaviour
         masterIdx.var = 0;
         flow = master.flows[masterIdx.var].dialogFlow[flowIdx];
         boxText.text = flow.basicText;
+        displayText.Invoke();
         flowIdx++;
     }
 
@@ -47,6 +49,7 @@ public class Ending_Narration : MonoBehaviour
             flow = master.flows[masterIdx.var].dialogFlow[flowIdx];
 
             boxText.text = flow.basicText;
+            displayText.Invoke();
             flowIdx++;
         }
         else
