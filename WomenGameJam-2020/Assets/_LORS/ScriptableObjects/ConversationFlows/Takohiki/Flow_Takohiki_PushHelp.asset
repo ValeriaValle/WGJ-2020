@@ -62,7 +62,7 @@ MonoBehaviour:
     emotion: 0
     music: 3
     basicText: Takohiki, I'd like to help you improve your grades. But if you don't
-      cooperate with me, then we can't do anything about it
+      cooperate with me, then we can't do anything about it.
     choice: []
   - isDialog: 0
     isNarration: 1
