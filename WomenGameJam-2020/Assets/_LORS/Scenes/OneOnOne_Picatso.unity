@@ -3346,6 +3346,7 @@ GameObject:
   - component: {fileID: 1989228003}
   - component: {fileID: 1989228005}
   - component: {fileID: 1989228004}
+  - component: {fileID: 1989228006}
   m_Layer: 5
   m_Name: ChoiceBox
   m_TagString: Untagged
@@ -3414,6 +3415,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989228002}
   m_CullTransparentMesh: 0
+--- !u!95 &1989228006
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989228002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 000da8a57a5dfe3428470fc433670413, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!95 &2046982994 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7766952757798008762, guid: f2bbdaddacc6cba498ca9bf208ddc1d4, type: 3}
